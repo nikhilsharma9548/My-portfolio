@@ -1,16 +1,18 @@
+import React from "react";
+import weatherApp from "../images/weatherApp.png";
 const Projects = () => {
     const projectList = [
       {
         title: "Tic Tac Toe Game",
         description: "A classic two-player Tic Tac Toe game built using React. Simple, fun, and interactive!",
-        github: "#", // GitHub link yahan daal
+        github: "https://github.com/nikhilsharma9548", // GitHub link yahan daal
         demo: "#",   // Live demo link yahan daal
       },
       {
         title: "Weather App",
         description: "A React app that fetches live weather data using an API. Displays current temperature and conditions.",
-        github: "#",
-        demo: "#",
+        github: "https://github.com/nikhilsharma9548",
+        demo: "https://weather-app-kohl-five-70.vercel.app",
       },
     ];
   
@@ -20,7 +22,13 @@ const Projects = () => {
           <h2 className="text-4xl font-bold">My Projects</h2>
           <p className="text-lg mt-2">Some cool stuff I’ve built recently 👇</p>
         </div>
-        <div className="max-w-7xl max-h-5xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+        <img
+          src={weatherApp}
+          alt="weatherApp"
+          className="w-full h-80 shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105
+           transtion duration-300"
+        />
           {projectList.map((project, index) => (
             <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
               <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>

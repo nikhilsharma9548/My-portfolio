@@ -3,13 +3,14 @@ import images from "../images/img1.jpg";
 const Hero = () => {  
     return (
       
-      <section className="h-screen flex pt-20 flex-col items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
+      <section className="h-screen flex pt-20 flex-col  items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
   
-         <div className="mt-10 md:mt-0 md:w-1/2  flex justify-center">
+         <div className="mt-10 md:mt-0 md:w-1/2   flex justify-center">
         <img
           src={images}
           alt="Nikhil"
-          className="w-80 h-80 rounded-full shadow-lg border-4 mt-20 border-white object-cover"
+          className="w-80 h-80 rounded-full shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105
+           transtion duration-300"
         />
       </div>
 
