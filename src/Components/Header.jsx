@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaRegMessage } from "react-icons/fa6";
 import images from "../images/img3.png";
 
 const Header = () => {
@@ -14,12 +15,12 @@ const Header = () => {
       </div>
       <div className="flex text-2xl w-[30%] items-center justify-center gap-14 shadow-lg rounded-full h-24 mt-5">
           <button >Home</button>
-          <a href="#About">About</a>
+          <a href="#About" className="">About</a>
           <button>Projects</button>
           <button>Skills</button>
       </div>
       <div className="items-center flex justify-center">
-        <h1 className="p-5 mx-6 bg-white text-lg rounded-full hover:cursor-pointer ">CONTACT ME</h1>
+        <h1 className="p-5 mx-6 bg-white text-lg rounded-full hover:cursor-pointer flex gap-3  "><FaRegMessage style={{ fontSize: "1.5em" }} />CONTACT ME</h1>
       </div>
 
       

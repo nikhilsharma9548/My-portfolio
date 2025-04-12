@@ -3,7 +3,7 @@ import image4 from "../images/img2.jpg";
 
 const About = () => {
   return (
-    <section id='About' className="h-screen bg-gradient-to-r from-gray-200 to-gray-700 ">
+    <section id='About' className="h-screen pt-40  bg-gradient-to-r from-gray-200 to-gray-700 ">
         <h1 className='flex items-center justify-center text-5xl font-serif font-bold'>ABOUT - ME</h1>
         
         <section className='flex justify-evenly '>
@@ -15,7 +15,7 @@ const About = () => {
                      />
                    </div>
               <div>
-                <p className='flex text-balance mt-32 text-3xl font-serif '>I am a Frontend Web Developer. I build projects using HTML, CSS, JavaScript, React, and TailwindCSS. I am always eager to learn new technologies and improve my skills.</p>
+               
               </div>
 
         </section>
