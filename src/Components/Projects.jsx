@@ -13,6 +13,7 @@ const Projects = () => {
         description: "A React app that fetches live weather data using an API. Displays current temperature and conditions.",
         github: "https://github.com/nikhilsharma9548",
         demo: "https://weather-app-kohl-five-70.vercel.app",
+        image: weatherApp,
       },
     ];
   
@@ -23,14 +24,12 @@ const Projects = () => {
           <p className="text-lg mt-2">Some cool stuff I’ve built recently 👇</p>
         </div>
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
-        <img
-          src={weatherApp}
-          alt="weatherApp"
-          className="w-full h-80 shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105
-           transtion duration-300"
-        />
+        
           {projectList.map((project, index) => (
             <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+              {project.image && (
+      <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-md mb-4" />
+    )}
               <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
               <p className="mb-4">{project.description}</p>
               <div className="flex gap-4">
