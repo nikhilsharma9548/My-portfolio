@@ -9,13 +9,13 @@ const Hero = () => {
         <img
           src={images}
           alt="Nikhil"
-          className="w-80 h-80 rounded-full shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105
+          className="w-72 h-72 rounded-full shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105
            transtion duration-300"
         />
       </div>
 
-        <h1 className="text-4xl md:text-6xl mt-10 font-bold mb-4">Hi, I'm <span className="text-red-600 text-7xl font-bold">Nikhil Sharma</span></h1>
-        <p className="text-lg md:text-2xl mb-6">Frontend Web Developer | I build beautiful UIs with React</p>
+        <h1 className="text-4xl md:text-5xl mt-10 font-bold mb-4">Hi, I'm <span className="text-red-600 text-6xl font-bold">Nikhil Sharma</span></h1>
+        <p className="text-lg md:text-xl mb-6">Frontend Web Developer | I build beautiful UIs with React</p>
         <div className="w-96 flex justify-between mt-10">
         <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank" className="px-6 py-3 flex gap-4 bg-red-400 hover:bg-red-700 rounded-full text-lg font-bold transition duration-300 ">
 
@@ -25,14 +25,14 @@ const Hero = () => {
 
           HIRE ME
   
-        </a>
-        <a
-          href="#projects"
-          className="px-6 py-3 text-lg font-bold  bg-red-400 hover:bg-red-700 rounded-full transition duration-300"
-        >
-          View My Work
-        </a>
-        </div>
+            </a>
+            <a
+              href="#projects"
+              className="px-6 py-3 text-lg font-bold  bg-red-400 hover:bg-red-700 rounded-full transition duration-300"
+            >
+              View My Work
+            </a>
+            </div>
         
       </section>
     );

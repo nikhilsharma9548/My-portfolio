@@ -10,7 +10,7 @@ const Header = () => {
       <img
             src={images}
             alt="logo"
-            className="w-24 h-24  rounded-full shadow-xl object-cover"
+            className="w-24 h-24  rounded-full shadow-xl mx-5 object-cover"
           /> <h1 className=" text-2xl">PORTFOLIO</h1>
       </div>
       <div className="flex text-2xl w-[30%] items-center justify-center gap-14 shadow-lg rounded-full h-24 mt-5">
