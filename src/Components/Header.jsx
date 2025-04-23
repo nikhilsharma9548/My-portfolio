@@ -13,7 +13,7 @@ const Header = () => {
             className="w-20 h-20 items-center max-md:h-12 max-md:w-12 max-md:mx-0 rounded-full shadow-xl mx-5 object-cover"
           /> <h1 className=" text-2xl max-md:text-[17px]">PORTFOLIO</h1>
       </div>
-      <div className="flex text-2xl w-[25%] max-md:hidden  items-center justify-center gap-10 shadow-lg rounded-full h-24 mt-2">
+      <div className="flex text-xl w-[25%] max-md:hidden  items-center justify-center gap-8 shadow-lg rounded-full h-20 mt-2">
           <button >Home</button>
           <a href="#About" className="">About</a>
           <button>Projects</button>
