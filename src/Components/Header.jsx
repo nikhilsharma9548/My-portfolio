@@ -4,7 +4,7 @@ import images from "../images/img3.png";
 
 const Header = () => {
   return (
-    <section className="fixed flex h-32 md:h-24  w-full justify-between shadow-lg bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif px-4">
+    <section className="fixed flex h-28 md:h-24  w-full justify-between shadow-lg bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif px-4">
 
       <div className=" flex justify-center items-center gap-5">
       <img
