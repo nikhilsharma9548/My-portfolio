@@ -1,5 +1,5 @@
 import React from "react";
-import weatherApp from "../images/weatherApp.png";
+import weatherApp from "src/images/weatherApp.png";
 const Projects = () => {
     const projectList = [
       {
