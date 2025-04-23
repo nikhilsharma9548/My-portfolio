@@ -6,7 +6,8 @@ const Header = () => {
   return (
     <section className="fixed flex h-28 md:h-24  w-full justify-between shadow-lg bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif px-4">
 
-      <div className=" flex justify-center flex-col items-center max-md:mx-10">
+      <div 
+      className=" flex justify-center max-md:flex-col items-center max-md:mx-10">
       <img
             src={images}
             alt="logo"
