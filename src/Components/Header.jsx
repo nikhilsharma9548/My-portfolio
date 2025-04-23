@@ -11,7 +11,7 @@ const Header = () => {
             src={images}
             alt="logo"
             className="w-24 h-24 items-center rounded-full shadow-xl mx-5 object-cover"
-          /> <h1 className=" text-2xl">PORTFOLIO</h1>
+          /> <h1 className=" text-2xl max-md:center">PORTFOLIO</h1>
       </div>
       <div className="flex text-2xl w-[25%] max-md:hidden  items-center justify-center gap-10 shadow-lg rounded-full h-24 mt-2">
           <button >Home</button>
@@ -19,7 +19,7 @@ const Header = () => {
           <button>Projects</button>
           <button>Skills</button>
       </div>
-      <div className="items-center flex justify-center">
+      <div className="items-center flex justify-center max-md:hidden">
         <h1 className="p-4  mx-6 bg-white text-[18px] rounded-full hover:cursor-pointer flex gap-3  "><FaRegMessage style={{ fontSize: "1.4em" }} />CONTACT ME</h1>
       </div>
 
