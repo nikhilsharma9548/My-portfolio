@@ -1,5 +1,4 @@
 import React from "react";
-import weatherApp from "src/images/weatherApp.png";
 const Projects = () => {
     const projectList = [
       {
@@ -13,7 +12,7 @@ const Projects = () => {
         description: "A React app that fetches live weather data using an API. Displays current temperature and conditions.",
         github: "https://github.com/nikhilsharma9548",
         demo: "https://weather-app-kohl-five-70.vercel.app",
-        image: weatherApp,
+      
       },
     ];
   
