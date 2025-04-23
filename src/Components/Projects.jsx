@@ -1,17 +1,19 @@
 import React from "react";
+import WeatherApp from "../images/WeatherApp.png";
 const Projects = () => {
     const projectList = [
       {
         title: "Tic Tac Toe Game",
         description: "A classic two-player Tic Tac Toe game built using React. Simple, fun, and interactive!",
-        github: "https://github.com/nikhilsharma9548", // GitHub link yahan daal
-        demo: "#",   // Live demo link yahan daal
+        github: "https://github.com/nikhilsharma9548",
+        demo: "#",
       },
       {
         title: "Weather App",
         description: "A React app that fetches live weather data using an API. Displays current temperature and conditions.",
         github: "https://github.com/nikhilsharma9548",
         demo: "https://weather-app-kohl-five-70.vercel.app",
+        image:WeatherApp,
       
       },
     ];
