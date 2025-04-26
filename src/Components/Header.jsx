@@ -11,10 +11,10 @@ const Header = () => {
   };
 
   const navItems = [
-    { name: "Home", link: "#home" },
+    { name: "Home", link: "#Home" },
     { name: "About", link: "#About" },
     { name: "Projects", link: "#projects" },
-    { name: "Skills", link: "#skills" },
+    { name: "Skills", link: "#Skills" },
   ];
 
   return (

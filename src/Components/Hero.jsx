@@ -4,7 +4,7 @@ import img1 from "../images/img1.jpg";
 const Hero = () => {  
     return (
       
-      <section className="h-screen flex pt-20 md:pt-40 flex-col  items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
+      <section id='Home' className="h-screen flex pt-20 md:pt-40 flex-col  items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
   
          <div className="mt-10 md:mt-0 md:w-1/2 flex justify-center">
         <img
