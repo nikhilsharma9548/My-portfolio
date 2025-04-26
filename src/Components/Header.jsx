@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { HiOutlineBars2 } from "react-icons/hi2";
+import { GiCrossedBones } from "react-icons/gi";
 import { FaRegMessage } from "react-icons/fa6"; 
-import { FaBars, FaTimes } from "react-icons/fa"; 
+// import { FaBars, FaTimes } from "react-icons/fa"; 
 import images from "../images/img3.png";
 
 const Header = () => {
@@ -19,7 +21,7 @@ const Header = () => {
 
   return (
     <section className="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif shadow-lg z-50">
-      <div className="flex items-center justify-between h-24 px-4 md:px-10">
+      <div className="flex items-center justify-between h-28 px-4 md:px-10">
 
         <div className="flex items-center gap-4">
           <img
@@ -31,7 +33,7 @@ const Header = () => {
         </div>
 
       
-        <div className="hidden md:flex items-center gap-8 text-lg">
+        <div className="hidden md:flex items-center gap-8 text-xl">
           {navItems.map((item, i) => (
             <a
               key={i}
@@ -52,25 +54,25 @@ const Header = () => {
 
   
         <div className="md:hidden text-2xl" onClick={toggleMenu}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
+          {menuOpen ? <GiCrossedBones /> : <HiOutlineBars2 className="text-3xl" />}
         </div>
       </div>
 
     
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center gap-4 bg-gray-800 text-white py-4 transition-all duration-500">
+        <div className="md:hidden absolute left-64 right-0  flex flex-col  items-end gap-4 rounded-md bg-gray-800 text-white py-4 transition-all duration-700 ">
           {navItems.map((item, i) => (
             <a
               key={i}
               href={item.link}
-              className="text-lg hover:text-gray-300"
+              className="text-lg hover:text-gray-300 text-center w-full py-0 px-4 rounded-md hover:bg-gray-700 transition-all duration-300"
               onClick={() => setMenuOpen(false)}
             >
               {item.name}
             </a>
           ))}
-          <h1 className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full hover:bg-black hover:text-white transition-all duration-300">
-            <FaRegMessage style={{ fontSize: "1.2em" }} /> CONTACT ME
+          <h1 className="flex items-center  rounded-full  text-center w-full py-0 px-10  hover:bg-gray-700 transition-all duration-300">
+             Contact-Me
           </h1>
         </div>
       )}
