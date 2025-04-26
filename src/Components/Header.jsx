@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaRegMessage } from "react-icons/fa6"; // ये fa6 से ही आता है
-import { FaBars, FaTimes } from "react-icons/fa"; // ये fa से लेना है
+import { FaRegMessage } from "react-icons/fa6"; 
+import { FaBars, FaTimes } from "react-icons/fa"; 
 import images from "../images/img3.png";
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
 
   const navItems = [
     { name: "Home", link: "#home" },
-    { name: "About", link: "#about" },
+    { name: "About", link: "#About" },
     { name: "Projects", link: "#projects" },
     { name: "Skills", link: "#skills" },
   ];
@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <section className="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif shadow-lg z-50">
       <div className="flex items-center justify-between h-24 px-4 md:px-10">
-        {/* Logo */}
+
         <div className="flex items-center gap-4">
           <img
             src={images}
@@ -30,7 +30,7 @@ const Header = () => {
           <h1 className="text-xl md:text-2xl font-bold">PORTFOLIO</h1>
         </div>
 
-        {/* Desktop Nav */}
+      
         <div className="hidden md:flex items-center gap-8 text-lg">
           {navItems.map((item, i) => (
             <a
@@ -43,20 +43,20 @@ const Header = () => {
           ))}
         </div>
 
-        {/* Contact Button (Desktop Only) */}
+      
         <div className="hidden md:flex items-center">
           <h1 className="px-4 py-2 bg-white text-[18px] rounded-full hover:cursor-pointer flex gap-2 hover:bg-black hover:text-white transition-all duration-300">
             <FaRegMessage style={{ fontSize: "1.2em" }} /> CONTACT ME
           </h1>
         </div>
 
-        {/* Mobile Menu Icon */}
+  
         <div className="md:hidden text-2xl" onClick={toggleMenu}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
 
-      {/* Mobile Menu */}
+    
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center gap-4 bg-gray-800 text-white py-4 transition-all duration-500">
           {navItems.map((item, i) => (
