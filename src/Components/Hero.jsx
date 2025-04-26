@@ -4,7 +4,7 @@ import img1 from "../images/img1.jpg";
 const Hero = () => {  
     return (
       
-      <section className="h-screen flex pt-20 flex-col  items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
+      <section className="h-screen flex pt-20 md:pt-40 flex-col  items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
   
          <div className="mt-10 md:mt-0 md:w-1/2 flex justify-center">
         <img
@@ -17,7 +17,7 @@ const Hero = () => {
         <h1 className="text-2xl md:text-3xl mt-10 font-bold mb-4">Hi, I'm <span className="text-red-600 text-4xl font-bold">Nikhil Sharma</span></h1>
         <p className="text-[12px] md:text-xl mb-6">Frontend Web Developer | I build beautiful UIs with React</p>
 
-        <div className="w-72 md:w-80 flex justify-between mt-7 md:mt-10">
+        <div className="w-72 md:w-80 flex justify-between  md:mt-10">
         <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341/"  target="_blank" className="px-3 py-3 flex gap-2  bg-red-400 hover:bg-red-700 rounded-full text-lg font-bold transition duration-300 ">
         <FaBagShopping  className="text-2xl"/>
         

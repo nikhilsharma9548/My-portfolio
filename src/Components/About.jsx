@@ -2,13 +2,12 @@ import React from 'react'
 import { FaCode } from "react-icons/fa6";
 import { PiGraduationCapFill } from "react-icons/pi";
 import { VscFileSubmodule } from "react-icons/vsc";
-
 import image4 from "../images/img2.jpg";
 
 const About = () => {
   return ( 
     <section id='About' className="h-full md:h-screen pt-40 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
-      <h1 className='flex items-center justify-center text-4xl font-serif font-bold'>ABOUT-ME</h1>
+      <h1 className='flex items-center justify-center text-4xl font-bold'>ABOUT-ME</h1>
 
       <div className='flex max-md:flex-col  justify-center w-full items-center gap-32 relative right-32'>
                     <div className="flex justify-center md:justify-end w-full  md:w-1/2">
