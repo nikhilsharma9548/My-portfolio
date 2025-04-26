@@ -22,7 +22,7 @@ const About = () => {
                     <h1 className=" w-[80%]  max-md: relative max-md:left-48 max-md:bottom-20 max-md:text-balance text-xl md:text-2xl text-balance leading-relaxed">I am a <span className='font-bold'>Frontend Web Developer</span>. I build projects using <span className='font-bold'> HTML, CSS, JavaScript, React, and TailwindCSS</span>. I am always eager to learn new technologies and improve my skills.</h1>
 
                     <div className='flex max-md:flex-col text-gray-950 gap-10 relative md:top-20 
-                    max-md:left-[11.5rem] max-md:bottom-10 max-md:text-balance  '>
+                    max-md:left-[12rem] max-md:bottom-10 max-md:text-balance  '>
 
                       <div className='h-52 w-72 bg-transparent  border-2 rounded-lg transition-all duration-500 hover:scale-105 hover:border-b-8 hover:border-r-8 hover:border-red-600'>
                         <p className='text-5xl px-6 pt-6'><FaCode /></p>
