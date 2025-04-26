@@ -1,5 +1,6 @@
 import React from "react";
-import images from "../images/img1.jpg";
+import { FaBagShopping } from "react-icons/fa6";
+import img1 from "../images/img1.jpg";
 const Hero = () => {  
     return (
       
@@ -7,21 +8,19 @@ const Hero = () => {
   
          <div className="mt-10 md:mt-0 md:w-1/2 flex justify-center">
         <img
-          src={images}
+          src={img1}
           alt="Nikhil"
-          className="w-48 h-48 md:w-72 md:h-72 rounded-full shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105
-           transtion duration-300"
+          className="w-48 h-48 md:w-72 md:h-72 rounded-full shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105 transition duration-300"
         />
       </div>
 
-        <h1 className="text-2xl md:text-5xl mt-10 font-bold mb-4">Hi, I'm <span className="text-red-600 text-4xl font-bold">Nikhil Sharma</span></h1>
+        <h1 className="text-2xl md:text-3xl mt-10 font-bold mb-4">Hi, I'm <span className="text-red-600 text-4xl font-bold">Nikhil Sharma</span></h1>
         <p className="text-[12px] md:text-xl mb-6">Frontend Web Developer | I build beautiful UIs with React</p>
-        <div className="w-96 flex justify-between mt-10">
-        <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank" className="px-6 py-3 flex gap-4 bg-red-400 hover:bg-red-700 rounded-full text-lg font-bold transition duration-300 ">
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-  <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z" clip-rule="evenodd" />
-</svg>
+        <div className="w-72 md:w-80 flex justify-between mt-7 md:mt-10">
+        <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341/"  target="_blank" className="px-3 py-3 flex gap-2  bg-red-400 hover:bg-red-700 rounded-full text-lg font-bold transition duration-300 ">
+        <FaBagShopping  className="text-2xl"/>
+        
 
           HIRE ME
   
@@ -30,7 +29,7 @@ const Hero = () => {
               href="#projects"
               className="px-6 py-3 text-lg font-bold  bg-red-400 hover:bg-red-700 rounded-full transition duration-300"
             >
-              View My Work
+              Resume
             </a>
             </div>
         
