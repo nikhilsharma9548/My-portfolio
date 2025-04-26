@@ -10,7 +10,7 @@ const Hero = () => {
         <img
           src={img1}
           alt="Nikhil"
-          className="w-48 h-48 md:w-72 md:h-72 rounded-full shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105 transition duration-300"
+          className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105 transition duration-300"
         />
       </div>
 
@@ -26,7 +26,7 @@ const Hero = () => {
   
             </a>
             <a
-              href="#projects"
+              href="#"
               className="px-6 py-3 text-lg font-bold  bg-red-400 hover:bg-red-700 rounded-full transition duration-300"
             >
               Resume
