@@ -4,7 +4,7 @@ import image4 from "../images/img2.jpg";
 
 const About = () => {
   return ( 
-    <section id='About' className="h-full pt-40 bg-gradient-to-r from-gray-200 to-gray-700">
+    <section id='About' className="h-full pt-40 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
       <h1 className='flex items-center justify-center text-5xl font-serif font-bold'>ABOUT-ME</h1>
 
       <div className='flex max-md:flex-col justify-center w-full items-center gap-32 relative right-32'>
@@ -20,7 +20,7 @@ const About = () => {
                     <h1 className=" w-[80%]  max-md: relative max-md:left-44 max-md:bottom-20 max-md:text-balance text-xl md:text-2xl text-balance leading-relaxed">I am a <span className='font-bold'>Frontend Web Developer</span>. I build projects using <span className='font-bold'> HTML, CSS, JavaScript, React, and TailwindCSS</span>. I am always eager to learn new technologies and improve my skills.</h1>
 
                     <div className='flex max-md:flex-col  gap-10 relative md:top-20 
-                    max-md:left-48 max-md:bottom-10 max-md:text-balance  '>
+                    max-md:left-44 max-md:bottom-10 max-md:text-balance  '>
                       <div className='h-52 w-72 bg-transparent  border-2 rounded-lg'>
                         <p className='text-5xl p-9'><FaCode /></p>
                       </div>
@@ -30,7 +30,7 @@ const About = () => {
                    </div>
       </div>
     </section>
-   //bg-transparent shadow-2xl hover:border-r-4 border-b-4 border-gray-600 p-8 transition-all duration-300 hover:-translate-y-4 translate-x-2 
+   
   )
 }
 

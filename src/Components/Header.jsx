@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaRegMessage } from "react-icons/fa6"; 
 import { FaBars, FaTimes } from "react-icons/fa"; 
-import img3 from "../images/img3.png";
+import images from "../images/img3.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +23,7 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           <img
-            src={img3}
+            src={images}
             alt="logo"
             className="w-14 h-14 md:w-20 md:h-20 rounded-full shadow-xl object-cover"
           />
@@ -31,7 +31,7 @@ const Header = () => {
         </div>
 
       
-        <div className=" hidden md:flex items-center gap-8 text-lg">
+        <div className="hidden md:flex items-center gap-8 text-lg">
           {navItems.map((item, i) => (
             <a
               key={i}
