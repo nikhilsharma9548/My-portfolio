@@ -20,7 +20,7 @@ const Projects = () => {
   
     return (
       <section id="projects"  className="py-40 h-screen bg-gradient-to-r from-gray-200 to-gray-700 text-gray-800">
-        <div className="text-center mb-10">
+        <div className="text-center  pt-40 mb-10">
           <h2 className="text-4xl font-bold">My Projects</h2>
           <p className="text-lg mt-2">Some cool stuff I’ve built recently 👇</p>
         </div>
