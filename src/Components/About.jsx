@@ -17,7 +17,7 @@ const About = () => {
                    </div>
 
                    <div className='w-full md:w-[80%] max-md:flex-col  justify-center md:justify-start items-center'>
-                    <h1 className=" w-[80%]  max-md: relative max-md:left-44 max-md:bottom-20 max-md:text-balance text-xl md:text-2xl text-balance leading-relaxed">I am a <span className='font-bold'>Frontend Web Developer</span>. I build projects using <span className='font-bold'> HTML, CSS, JavaScript, React, and TailwindCSS</span>. I am always eager to learn new technologies and improve my skills.</h1>
+                    <h1 className=" w-[80%]  max-md: relative max-md:left-48 max-md:bottom-20 max-md:text-balance text-xl md:text-2xl text-balance leading-relaxed">I am a <span className='font-bold'>Frontend Web Developer</span>. I build projects using <span className='font-bold'> HTML, CSS, JavaScript, React, and TailwindCSS</span>. I am always eager to learn new technologies and improve my skills.</h1>
 
                     <div className='flex max-md:flex-col  gap-10 relative md:top-20 
                     max-md:left-[11.5rem] max-md:bottom-10 max-md:text-balance  '>
