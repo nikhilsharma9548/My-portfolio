@@ -60,12 +60,16 @@ const Header = () => {
 
     
       {menuOpen && (
-        <div className="md:hidden absolute left-64 right-0  flex flex-col  items-end gap-4 rounded-md bg-gray-800 text-white py-4 transition-all duration-700 ">
+        <div id="menu" 
+        className="md:hidden absolute left-64 right-0  flex flex-col  items-end gap-4 rounded-md bg-gray-800 text-white py-4 px-4 shadow-lg transition-transform duration-300 ease-in-out z-50 ">
+
+          
+
           {navItems.map((item, i) => (
             <a
               key={i}
               href={item.link}
-              className="text-lg hover:text-gray-300 text-center w-full py-0 px-4 rounded-md hover:bg-gray-700 transition-all duration-300"
+              className="text-lg hover:text-gray-300 text-center w-full py-0 px-4  rounded-md hover:bg-gray-700 transition-all duration-300 "
               onClick={() => setMenuOpen(false)}
             >
               {item.name}

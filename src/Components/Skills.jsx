@@ -45,7 +45,7 @@ const Skills = () => {
                 {SkillsList.map((skill, index) => (
                     <div key={index} className="bg-white w-64 h-16 border border-black p-2 rounded-xl shadow-lg hover:shadow-2xl  transition-all hover:scale-105 duration-700 flex items-center gap-4 cursor-pointer">
                         <img src={skill.image} alt={skill.name} className="w-10 h-10 m-3 object-cover rounded-md mb-4 "/>
-                        <h3 className="text-2xl font-semibold mb-2">{skill.name}</h3>
+                        <h3 className="text-lg font-semibold mb-2">{skill.name}</h3>
                     </div>
                 ))}
 
