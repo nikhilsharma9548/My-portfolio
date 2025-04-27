@@ -4,7 +4,7 @@ import img2 from '../images/CSS.webp';
 import img3 from '../images/JS.webp';
 import img4 from '../images/React.webp';
 import img5 from '../images/Tailwind.webp';
-import img6 from '../images/nodejs.webp';
+import img6 from '../images/nodeJS.webp';
 
 const Skills = () => {
     const SkillsList = [
@@ -29,9 +29,9 @@ const Skills = () => {
             image: img5,
         },
         {
-            name: "nodeJS",
+            name: "node-JS",
             image: img6
-        }
+        },
     ]
 
   return (
