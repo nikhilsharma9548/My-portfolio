@@ -1,16 +1,18 @@
 import React from "react";
 import WeatherApp from "../images/WeatherApp.png";
+import { IoLogoGithub } from "react-icons/io";
+import { LuLink } from "react-icons/lu";
 const Projects = () => {
     const projectList = [
       {
         title: "Tic Tac Toe Game",
-        description: "A classic two-player Tic Tac Toe game built using React. Simple, fun, and interactive!",
+        description: "A classic two-player Tic Tac Toe game built using HTML ,CSS ,Javasript. Simple, fun, and interactive!",
         github: "https://github.com/nikhilsharma9548",
         demo: "#",
       },
       {
         title: "Weather App",
-        description: "A React app that fetches live weather data using an API. Displays current temperature and conditions.",
+        description: "A HTML, CSS, JS app that fetches live weather data using an API. Displays current temperature and conditions.",
         github: "https://github.com/nikhilsharma9548",
         demo: "https://weather-app-kohl-five-70.vercel.app",
         image:WeatherApp,
@@ -33,20 +35,20 @@ const Projects = () => {
     )}
               <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
               <p className="mb-4">{project.description}</p>
-              <div className="flex gap-4">
+              <div className="flex gap-6">
                 <a
                   href={project.github}
                   target="_blank"
-                  className="text-blue-600 hover:underline"
+                  className="text-black text-4xl hover:underline hover:scale-105 transition duration-300"
                 >
-                  GitHub
+                  <IoLogoGithub />
                 </a>
                 <a
                   href={project.demo}
                   target="_blank"
-                  className="text-blue-600 hover:underline"
+                  className="text-black text-4xl text-bold hover:underline hover:scale-105 transition duration-300"
                 >
-                  Live Demo
+                 <LuLink />
                 </a>
               </div>
             </div>
