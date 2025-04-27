@@ -76,8 +76,8 @@ const Contact = () => {
                 <img src={icon.Image} alt="icon" className='w-10 h-10 object-cover' />
                 </a>
             </div>
-))}
-        </div>
+        ))}
+         </div>
 
 
        </section>

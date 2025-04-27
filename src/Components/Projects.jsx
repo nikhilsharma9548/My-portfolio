@@ -39,14 +39,14 @@ const Projects = () => {
                 <a
                   href={project.github}
                   target="_blank"
-                  className="text-black text-4xl hover:underline hover:scale-105 transition duration-300"
+                  className="text-black text-4xl hover:underline hover:scale-110 transition duration-300"
                 >
                   <IoLogoGithub />
                 </a>
                 <a
                   href={project.demo}
                   target="_blank"
-                  className="text-black text-4xl text-bold hover:underline hover:scale-105 transition duration-300"
+                  className="text-black text-4xl text-bold hover:underline hover:scale-110 transition duration-300"
                 >
                  <LuLink />
                 </a>

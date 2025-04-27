@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { HiOutlineBars2 } from "react-icons/hi2";
 import { GiCrossedBones } from "react-icons/gi";
 import { FaRegMessage } from "react-icons/fa6"; 
+ import '../index.css';
+
 import { Link } from "react-scroll";
 // import { FaBars, FaTimes } from "react-icons/fa"; 
 import images from "../images/img3.png";
@@ -42,13 +44,18 @@ const Header = () => {
               href={item.link}
               className="hover:text-white transition-all duration-300"
             >
-               <Link
-               to={item.link.replace("#", "")}
-               smooth={true}
-               duration={700}
-               offset={-70}
-               activeClass="active"
-              >{item.name}</Link>
+              <Link
+                key={i}
+                to={item.link}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                spy={true}
+                activeClass="active-link"
+                className="text-lg cursor-pointer pb-2 transition-all duration-300"
+              >
+                {item.name}
+              </Link>
             </a>
           ))}
         </div>
@@ -80,18 +87,24 @@ const Header = () => {
               className="text-lg hover:text-gray-300 text-center w-full py-0 px-4  rounded-md hover:bg-gray-700 transition-all duration-300 "
               onClick={() => setMenuOpen(false)}
             >
+          
              <Link
-               to={item.link.replace("#", "")}
-               smooth={true}
-               duration={700}
-               offset={-70}
-               activeClass="active "
-              >{item.name}</Link>
+             key={i}
+             to={item.link}
+             smooth={true}
+             duration={500}
+             offset={-70}
+             spy={true}
+             activeClass="active-link"
+             className="text-lg cursor-pointer pb-2 transition-all duration-300"
+           >
+             {item.name}
+           </Link>
             </a>
           ))}
-          <button  className="flex items-center  rounded-full  text-center w-full py-0 px-10  hover:bg-gray-700 transition-all duration-300">
+          {/* <button  className="flex items-center  rounded-full  text-center w-full py-0 px-10  hover:bg-gray-700 transition-all duration-300">
              Contact-Me
-          </button>
+          </button> */}
         </div>
       )}
     </section>
