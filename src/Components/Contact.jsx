@@ -71,7 +71,7 @@ const Contact = () => {
         </div >
         <div className='mt-10  flex items-center justify-center gap-7'>
         {iconList.map((icon, index) => (
-            <div key={index} className='w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-500 cursor-pointer'>
+            <div key={index} className='w-14 h-14 rounded-full relative bottom-5 md:bottom-0 bg-white flex items-center justify-center shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-500 cursor-pointer'>
                 <a href={icon.link} target="_blank" rel="noopener noreferrer">
                 <img src={icon.Image} alt="icon" className='w-10 h-10 object-cover' />
                 </a>
