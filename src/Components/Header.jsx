@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HiOutlineBars2 } from "react-icons/hi2";
 import { GiCrossedBones } from "react-icons/gi";
 import { FaRegMessage } from "react-icons/fa6"; 
+import { Link } from "react-scroll";
 // import { FaBars, FaTimes } from "react-icons/fa"; 
 import images from "../images/img3.png";
 
@@ -13,10 +14,11 @@ const Header = () => {
   };
 
   const navItems = [
-    { name: "Home", link: "#Home" },
-    { name: "About", link: "#About" },
-    { name: "Projects", link: "#projects" },
-    { name: "Skills", link: "#Skills" },
+    { name: "Home", link: "Home" },
+    { name: "About", link: "About" },
+    { name: "Projects", link: "projects" },
+    { name: "Skills", link: "Skills" },
+    { name: "Contact", link: "Contact" },
   ];
 
   return (
@@ -40,7 +42,13 @@ const Header = () => {
               href={item.link}
               className="hover:text-white transition-all duration-300"
             >
-              {item.name}
+               <Link
+               to={item.link.replace("#", "")}
+               smooth={true}
+               duration={700}
+               offset={-70}
+               activeClass="active"
+              >{item.name}</Link>
             </a>
           ))}
         </div>
@@ -72,12 +80,18 @@ const Header = () => {
               className="text-lg hover:text-gray-300 text-center w-full py-0 px-4  rounded-md hover:bg-gray-700 transition-all duration-300 "
               onClick={() => setMenuOpen(false)}
             >
-              {item.name}
+             <Link
+               to={item.link.replace("#", "")}
+               smooth={true}
+               duration={700}
+               offset={-70}
+               activeClass="active "
+              >{item.name}</Link>
             </a>
           ))}
-          <h1 className="flex items-center  rounded-full  text-center w-full py-0 px-10  hover:bg-gray-700 transition-all duration-300">
+          <button  className="flex items-center  rounded-full  text-center w-full py-0 px-10  hover:bg-gray-700 transition-all duration-300">
              Contact-Me
-          </h1>
+          </button>
         </div>
       )}
     </section>
