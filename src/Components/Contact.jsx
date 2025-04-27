@@ -1,9 +1,13 @@
 import React from 'react'
 import axios from 'axios';
+import img1 from '../images/github.webp';
+import img2 from '../images/linkdin.webp';
+import img3 from '../images/insta.webp';  
 import { useForm } from "react-hook-form";
 import toast from 'react-hot-toast';
 
 const Contact = () => {
+    
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = async(data) => {
         const userInfo = {  
@@ -18,6 +22,22 @@ const Contact = () => {
             toast.error("Error sending form data:", error);
         }
     }
+    const iconList = [
+        {
+          Image: img1,
+          link: "https://github.com/nikhilsharma9548"
+        },
+        {
+          Image: img2,
+          link: "https://www.linkedin.com/in/nikhil-sharma-43a013341/"
+        },
+        {
+          Image: img3,
+          link: "https://www.instagram.com/sharmaharrdy/?hl=en"
+        }
+      ];
+      
+
     return(
        <section  id="Contact" className="bg-gradient-to-r from-gray-200 to-gray-700 h-full md:h-screen overflow-hidden">
         <h1 className='flex items-center justify-center text-4xl font-bold'>Contact-Me</h1>
@@ -48,6 +68,15 @@ const Contact = () => {
                 {errors.message && <span>This field is required</span>}
                 <button type="submit" className='bg-black text-white w-40 h-14 mt-5 rounded-md'>Send</button>
             </form>
+        </div >
+        <div className='mt-10  flex items-center justify-center gap-7'>
+        {iconList.map((icon, index) => (
+            <div key={index} className='w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-500 cursor-pointer'>
+                <a href={icon.link} target="_blank" rel="noopener noreferrer">
+                <img src={icon.Image} alt="icon" className='w-10 h-10 object-cover' />
+                </a>
+            </div>
+))}
         </div>
 
 

@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import About from "./Components/About";
 import Skills from "./Components/Skills"; 
 import Contact  from "./Components/Contact";
+import Footer from "./Components/Footer";
 import { Toaster } from "react-hot-toast";
       
 
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </div>
     <Toaster
     position="bottom-center"
