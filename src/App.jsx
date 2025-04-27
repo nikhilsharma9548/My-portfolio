@@ -19,7 +19,10 @@ function App() {
       <Projects />
       <Contact />
     </div>
-    <Toaster />
+    <Toaster
+    position="bottom-center"
+    reverseOrder={false}
+    />
    </>
 
   );
