@@ -9,6 +9,7 @@ const Projects = () => {
         description: "A classic two-player Tic Tac Toe game built using HTML ,CSS ,Javasript. Simple, fun, and interactive!",
         github: "https://github.com/nikhilsharma9548",
         demo: "#",
+        
       },
       {
         title: "Weather App",
