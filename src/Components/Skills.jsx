@@ -39,11 +39,11 @@ const Skills = () => {
             <h1 className='text-5xl text-center relative left-5'>Skills</h1>
             <h1 className='text-xl w-64 relative right-8 mt-10 md:w-full md:text-center md:left-5 left-10 '>I have a lot of experience in web development and I have worked with these technologies:</h1>
 
-            <div className='w-[80%] md:left-44 left-8 h-full max-md:flex-col relative max-md:right-8 flex justify-center gap-10 mt-10 md:mt-20 flex-wrap'>
+            <div className='w-[80%] md:left-44 right-5 h-full max-md:flex-col relative  flex justify-center gap-10 mt-10 md:mt-20 flex-wrap'>
 
 
                 {SkillsList.map((skill, index) => (
-                    <div key={index} className="bg-white w-64 h-16 border border-black p-2 rounded-xl shadow-lg hover:shadow-2xl  transition-all hover:scale-105 duration-700 flex items-center gap-4 cursor-pointer">
+                    <div key={index} className="bg-white w-80 h-16 border border-black p-2 rounded-xl shadow-lg hover:shadow-2xl  transition-all hover:scale-105 duration-700 flex items-center gap-4 cursor-pointer">
                         <img src={skill.image} alt={skill.name} className="w-10 h-10 m-3 object-cover rounded-md mb-4 "/>
                         <h3 className="text-lg font-semibold mb-2">{skill.name}</h3>
                     </div>
