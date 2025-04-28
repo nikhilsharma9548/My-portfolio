@@ -52,7 +52,7 @@ const Header = () => {
                 offset={-70}
                 spy={true}
                 activeClass="active-link"
-                className="text-lg cursor-pointer pb-2 transition-all duration-300"
+                className="text-xl cursor-pointer pb-3 transition-all duration-300"
               >
                 {item.name}
               </Link>
@@ -96,7 +96,7 @@ const Header = () => {
              offset={-70}
              spy={true}
              activeClass="active-link"
-             className="text-lg cursor-pointer pb-2 transition-all duration-300"
+             className="text-lg cursor-pointer pb-3 transition-all duration-300"
            >
              {item.name}
            </Link>

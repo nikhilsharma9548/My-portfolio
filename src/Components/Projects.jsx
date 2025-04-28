@@ -26,7 +26,7 @@ const Projects = () => {
           <h2 className="text-4xl font-bold">My Projects</h2>
           <p className="text-lg mt-2">Some cool stuff I’ve built recently 👇</p>
         </div>
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+        <div className="max-w-6xl w-[80%]  mx-auto px-4 grid md:grid-cols-2 gap-8">
         
           {projectList.map((project, index) => (
             <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
