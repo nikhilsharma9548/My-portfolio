@@ -39,7 +39,7 @@ const Header = () => {
       
         <div className="hidden md:flex items-center gap-8 text-xl">
           {navItems.map((item, i) => (
-            <a
+            <h1
               key={i}
               href={item.link}
               className="hover:text-white transition-all duration-300"
@@ -56,7 +56,7 @@ const Header = () => {
               >
                 {item.name}
               </Link>
-            </a>
+            </h1>
           ))}
         </div>
 
@@ -81,7 +81,7 @@ const Header = () => {
           
 
           {navItems.map((item, i) => (
-            <a
+            <h1
               key={i}
               href={item.link}
               className="text-lg hover:text-gray-300 text-center w-full py-0 px-4  rounded-md hover:bg-gray-700 transition-all duration-300 "
@@ -100,7 +100,7 @@ const Header = () => {
            >
              {item.name}
            </Link>
-            </a>
+            </h1>
           ))}
           {/* <button  className="flex items-center  rounded-full  text-center w-full py-0 px-10  hover:bg-gray-700 transition-all duration-300">
              Contact-Me
