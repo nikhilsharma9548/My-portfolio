@@ -4,13 +4,13 @@ import img1 from "../images/img1.jpg";
 const Hero = () => {  
     return (
       
-      <section id='Home' className="h-screen flex pt-20 md:pt-40 flex-col max-md:justify-center items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
+      <section id='Home' className="h-screen flex md:pt-40 flex-col max-md:justify-center items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
   
-         <div className="mt-10 md:mt-0 md:w-1/2 flex justify-center">
+         <div className=" md:mt-0 md:w-1/2 flex justify-center">
         <img
           src={img1}
           alt="Nikhil"
-          className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105 transition duration-300"
+          className="w-60 h-60 md:w-64 md:h-64 rounded-full shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105 transition duration-300"
         />
       </div>
 
