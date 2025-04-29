@@ -35,24 +35,32 @@ const Skills = () => {
     ]
 
   return (
-    <section id='Skills' className="h-auto w-full  p-32 pt-14 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
-            <h1 className='text-5xl text-center right-3'>Skills</h1>
-            <h1 className='text-xl w-64 relative right-14 sm:right-8 mt-10 md:w-full md:text-center md:left-5 sm:left-3 '>I have a lot of experience in web development and I have worked with these technologies:</h1>
+    <section
+  id="Skills"
+  className="min-h-screen w-full px-4 py-20 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700 flex flex-col justify-center items-center text-center"
+>
+  <h1 className="text-5xl font-bold mb-6">Skills</h1>
+  <p className="text-xl max-w-2xl mb-12">
+    I have a lot of experience in web development and I have worked with these technologies:
+  </p>
 
-            <div className='w-[80%] md:left-44 right-24 h-full flex-col md:flex-row relative  flex justify-center gap-10 mt-10 md:mt-20 flex-wrap'>
+  <div className="flex flex-wrap w-[70%] justify-center gap-6">
+    {SkillsList.map((skill, index) => (
+      <div
+        key={index}
+        className="bg-white w-72 h-16 border border-black p-2 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-700 flex items-center gap-4 cursor-pointer"
+      >
+        <img
+          src={skill.image}
+          alt={skill.name}
+          className="w-10 h-10 object-cover rounded-md"
+        />
+        <h3 className="text-lg font-semibold">{skill.name}</h3>
+      </div>
+    ))}
+  </div>
+</section>
 
-
-                {SkillsList.map((skill, index) => (
-                    <div key={index} className="bg-white w-80 h-16 border border-black p-2 rounded-xl shadow-lg hover:shadow-2xl  transition-all hover:scale-105 duration-700 flex items-center gap-4 cursor-pointer">
-                        <img src={skill.image} alt={skill.name} className="w-10 h-10 m-3 object-cover rounded-md mb-4 "/>
-                        <h3 className="text-lg font-semibold mb-2">{skill.name}</h3>
-                    </div>
-                ))}
-
-
-            </div>
-
-    </section>
   )
 }
 
