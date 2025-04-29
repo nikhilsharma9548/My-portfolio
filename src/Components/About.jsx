@@ -9,7 +9,7 @@ const About = () => {
     <section id='About' className="min-h-screen w-full  pt-14 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
   <h1 className='flex items-center justify-center  text-4xl font-bold mb-6'>ABOUT-ME</h1>
 
-  <div className='flex flex-col md:flex-row relative right-80 justify-center items-center gap-10 md:gap-32 px-4'>
+  <div className='flex flex-col md:flex-row relative md:right-80  justify-center items-center gap-10 md:gap-32 px-4'>
     
     <div className="flex justify-center md:justify-end w-full md:w-1/2">
       <img
