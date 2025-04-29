@@ -35,7 +35,7 @@ const Skills = () => {
     ]
 
   return (
-    <section id='Skills' className="h-full w-full  md:h-auto p-32 pt-32 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
+    <section id='Skills' className="h-auto w-full  md:h-auto p-32 pt-14 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
             <h1 className='text-5xl text-center right-3'>Skills</h1>
             <h1 className='text-xl w-64 relative right-8 mt-10 md:w-full md:text-center md:left-5 left-3 '>I have a lot of experience in web development and I have worked with these technologies:</h1>
 

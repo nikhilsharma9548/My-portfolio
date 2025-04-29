@@ -39,7 +39,7 @@ const Contact = () => {
       
 
     return(
-       <section  id="Contact" className="bg-gradient-to-r from-gray-200 to-gray-700 h-full md:h-screen overflow-hidden max-sm:pt-40">
+       <section  id="Contact" className=" pt-14 bg-gradient-to-r from-gray-200 to-gray-700 h-full md:h-screen overflow-hidden max-sm:pt-40">
         <h1 className='flex items-center justify-center text-4xl font-bold'>Contact-Me</h1>
         <p className='text-center text-xl md:text-2xl mt-20'>Please Fill out the form below to discuss anywork opportunities.</p>
         <div className='mt-10 max-md:w-[80%] relative left-14'>
@@ -47,7 +47,7 @@ const Contact = () => {
             onSubmit={handleSubmit(onSubmit)}
             // action="https://getform.io/f/bjjmpqzb"
             // method="POST"
-             className='flex flex-col items-center text-xl justify-center gap-4 mt-10  '>
+             className='flex flex-col items-center text-xl justify-center gap-4 mt-10 relative right-10'>
                 <input 
                 {...register("name", { required: true })}
                 type="text"
@@ -70,7 +70,7 @@ const Contact = () => {
             </form>
         </div >
 
-        <div className='mt-10  flex items-center justify-center gap-7'>
+        <div className='mt-10  flex items-center relative left-4  justify-center gap-7'>
         {iconList.map((icon, index) => (
             <div key={index} className='w-14 h-14 rounded-full relative bottom-5 md:bottom-0 bg-white flex items-center justify-center shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-500 cursor-pointer'>
                 <a href={icon.link} target="_blank" rel="noopener noreferrer">
