@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBagShopping } from "react-icons/fa6";
+import Resume from "../images/Resume.pdf";
 import img1 from "../images/img1.jpg";
 const Hero = () => {  
     return (
@@ -26,7 +27,7 @@ const Hero = () => {
   
             </a>
             <a
-              href="#"
+              href={Resume} download='Resume.pdf'
               className="px-6 py-3 text-xl font-bold  bg-red-400 hover:bg-red-700 rounded-full transition duration-300"
             >
               Resume
