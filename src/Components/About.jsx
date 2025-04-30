@@ -6,20 +6,20 @@ import image4 from "../images/img2.jpg";
 
 const About = () => {
   return ( 
-    <section id='About' className=" w-full  pt-14 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
-  <h1 className='flex items-center justify-center  text-4xl font-bold mb-6'>ABOUT-ME</h1>
+    <section id='About' className=" w-full flex-col md:flex-row justify-center content-center pt-14 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
+  <h1 className=' text-4xl text-center font-bold mb-6'>ABOUT-ME</h1>
 
-  <div className='flex flex-col md:flex-row relative md:right-80  justify-center items-center gap-10 md:gap-32 px-4'>
+  <div className='flex flex-col md:flex-row justify-center  gap-10 md:gap-32 px-4'>
     
-    <div className="flex justify-center md:justify-end w-full md:w-1/2">
+    <div className="flex justify-center w-full md:w-auto">
       <img
         src={image4}
         alt="Nikhil"
-        className="w-64 h-96 md:w-80 md:h-[420px] rounded-3xl shadow-lg mt-10 md:mt-20 border-gray-400 object-cover hover:scale-105 transition duration-500 cursor-pointer"
+        className="w-60 h-80 md:w-80 md:h-[420px] rounded-3xl shadow-lg mt-10 md:mt-20 border-gray-400 object-cover hover:scale-105 transition duration-500 cursor-pointer"
       />
     </div>
 
-    <div className='w-full md:w-1/2 flex flex-col justify-center items-center md:items-start gap-6 mt-6 md:mt-0'>
+    <div className='w-full md:w-1/2 flex flex-col justify-center items-center gap-6 mt-6 md:mt-0'>
       <h1 className="text-center md:text-left text-base sm:text-lg md:text-2xl leading-relaxed px-2">
         I am a <span className='font-bold'>Frontend Web Developer</span>. I build projects using <span className='font-bold'> HTML, CSS, JavaScript, React, and TailwindCSS</span>. I am always eager to learn new technologies and improve my skills.
       </h1>
