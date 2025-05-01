@@ -39,8 +39,8 @@ const Skills = () => {
   id="Skills"
   className="min-h-screen w-full px-4 py-20 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700 flex flex-col justify-center items-center text-center"
 >
-  <h1 className="text-5xl font-bold mb-6">Skills</h1>
-  <p className="text-xl max-w-2xl mb-12">
+  <h1 className="text-4xl font-bold mb-6">Skills</h1>
+  <p className="text-lg max-w-2xl mb-12">
     I have a lot of experience in web development and I have worked with these technologies:
   </p>
 
@@ -48,14 +48,14 @@ const Skills = () => {
     {SkillsList.map((skill, index) => (
       <div
         key={index}
-        className="bg-white w-72 h-16 border border-black p-2 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-700 flex items-center gap-4 cursor-pointer"
+        className="bg-white w-72 h-14 border border-black p-2 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-700 flex items-center gap-4 cursor-pointer"
       >
         <img
           src={skill.image}
           alt={skill.name}
-          className="w-10 h-10 object-cover rounded-md"
+          className="w-8 h-8 object-cover rounded-md"
         />
-        <h3 className="text-lg font-semibold">{skill.name}</h3>
+        <h3 className="text-sm font-semibold">{skill.name}</h3>
       </div>
     ))}
   </div>

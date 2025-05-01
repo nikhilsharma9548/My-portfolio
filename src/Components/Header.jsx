@@ -24,20 +24,20 @@ const Header = () => {
   ];
 
   return (
-    <section className="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif shadow-lg z-50">
-      <div className="flex items-center justify-between h-28 px-4 md:px-10">
+    <section className="fixed top-0 left-0 w-full  bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif shadow-lg z-50">
+      <div className="flex items-center justify-between h-20 px-4 md:px-10">
 
         <div className="flex items-center gap-4">
           <img
             src={images}
             alt="logo"
-            className="w-14 h-14 md:w-20 md:h-20 rounded-full shadow-xl object-cover"
+            className="w-14 h-14 md:w-14 md:h-14 rounded-full shadow-xl object-cover"
           />
           <h1 className="text-xl md:text-2xl font-bold">PORTFOLIO</h1>
         </div>
 
       
-        <div className="hidden md:flex items-center gap-8 text-xl">
+        <div className="hidden md:flex items-center gap-6 text-xl">
           {navItems.map((item, i) => (
             <h1
               key={i}
@@ -52,7 +52,7 @@ const Header = () => {
                 offset={-70}
                 spy={true}
                 activeClass="active-link"
-                className="text-xl cursor-pointer pb-3 transition-all duration-300"
+                className="text-lg cursor-pointer pb-3 transition-all duration-300"
               >
                 {item.name}
               </Link>
