@@ -31,9 +31,9 @@ const Header = () => {
           <img
             src={images}
             alt="logo"
-            className="w-14 h-14 md:w-14 md:h-14 rounded-full shadow-xl object-cover"
+            className="w-14 h-14 rounded-full shadow-xl object-cover"
           />
-          <h1 className="text-xl md:text-2xl font-bold">PORTFOLIO</h1>
+          <h1 className="text-lg md:text-xl font-bold">PORTFOLIO</h1>
         </div>
 
       
@@ -62,7 +62,7 @@ const Header = () => {
 
       
         <div className="hidden md:flex items-center">
-          <h1 className="px-4 py-2 bg-white text-[18px] rounded-full hover:cursor-pointer flex gap-2 hover:bg-black hover:text-white transition-all duration-300">
+          <h1 className="px-4 py-2 bg-white xl:text-[18px] rounded-full hover:cursor-pointer flex gap-2 hover:bg-black hover:text-white transition-all duration-300">
             <FaRegMessage style={{ fontSize: "1.2em" }} /> CONTACT ME
           </h1>
         </div>
