@@ -18,8 +18,8 @@ const Header = () => {
   const navItems = [
     { name: "Home", link: "Home" },
     { name: "About", link: "About" },
-    { name: "Projects", link: "projects" },
     { name: "Skills", link: "Skills" },
+    { name: "Projects", link: "projects" },
     { name: "Contact", link: "Contact" },
   ];
 
@@ -27,22 +27,22 @@ const Header = () => {
     <section className="fixed top-0 left-0 w-full  bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif shadow-lg z-50">
       <div className="flex items-center justify-between h-20 px-4 md:px-10">
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 md:gap-2">
           <img
             src={images}
             alt="logo"
-            className="w-14 h-14 rounded-full shadow-xl object-cover"
+            className="w-12 h-12 rounded-full shadow-xl object-cover"
           />
-          <h1 className="text-lg md:text-xl font-bold">PORTFOLIO</h1>
+          <h1 className="text-lg md:text-lg lg:text-xl font-bold">PORTFOLIO</h1>
         </div>
 
       
-        <div className="hidden md:flex items-center gap-6 text-xl">
+        <div className="hidden md:flex items-center gap-6  text-xl">
           {navItems.map((item, i) => (
             <h1
               key={i}
               href={item.link}
-              className="hover:text-white transition-all duration-300"
+              className="text-lg lg:text-xl hover:text-white transition-all duration-300"
             >
               <Link
                 key={i}
@@ -62,7 +62,7 @@ const Header = () => {
 
       
         <div className="hidden md:flex items-center">
-          <h1 className="px-4 py-2 bg-white xl:text-[18px] rounded-full hover:cursor-pointer flex gap-2 hover:bg-black hover:text-white transition-all duration-300">
+          <h1 className="px-4 py-2 bg-white lg:text-xl text-lg md:text-sm rounded-full hover:cursor-pointer flex gap-2 hover:bg-black hover:text-white transition-all duration-300">
             <FaRegMessage style={{ fontSize: "1.2em" }} /> CONTACT ME
           </h1>
         </div>
