@@ -36,7 +36,7 @@ const About = () => {
         <div className='w-60 h-44 xl:h-48 xl:w-64 bg-transparent border-2 rounded-lg transition-all duration-500 hover:scale-105 hover:border-b-8 hover:border-r-8 hover:border-red-600'>
           <p className='text-4xl px-5 pt-5'><PiGraduationCapFill /></p>
           <h1 className='px-4 pt-2 text-lg xl:text-xl'>Education</h1>
-          <h1 className='text-lg xl:text-xl p-1 mx-2'>Bachelor of Computer Applications(BCA)[Present]</h1>
+          <h1 className='text-lg xl:text-xl p-1 mx-2'>Bachelor of Computer Applications(BCA)</h1>
         </div>
 
         <div className='w-60 h-44 xl:h-48 xl:w-64 bg-transparent border-2 rounded-lg transition-all duration-500 hover:scale-105 hover:border-b-8 hover:border-r-8 hover:border-red-600'>
