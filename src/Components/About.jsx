@@ -27,19 +27,19 @@ const About = () => {
 
       <div className='flex flex-col md:w-[90%] justify-center lg:w-full md:flex-row items-center md:items-start gap-6 mt-5 md:gap-10'>
 
-        <div className='w-60 h-44 xl:h-48 xl:w-64 bg-transparent  border-2 rounded-lg transition-all duration-500 hover:scale-105 hover:border-b-8 hover:border-r-8 hover:border-red-600'>
+        <div className='w-60 h-44 xl:h-48 xl:w-64 bg-transparent  border-2 rounded-lg transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-red-600'>
           <p className='text-4xl p-4'><FaCode /></p>
           <p className='px-4 pt-2 text-lg xl:text-xl  '>Languages</p>
           <p className='text-lg xl:text-xl p-1 mx-2'>HTML, CSS, JavaScript, ReactJS, TailwindCSS</p>
         </div>
 
-        <div className='w-60 h-44 xl:h-48 xl:w-64 bg-transparent border-2 rounded-lg transition-all duration-500 hover:scale-105 hover:border-b-8 hover:border-r-8 hover:border-red-600'>
+        <div className='w-60 h-44 xl:h-48 xl:w-64 bg-transparent border-2 rounded-lg transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-red-600'>
           <p className='text-4xl px-5 pt-5'><PiGraduationCapFill /></p>
           <h1 className='px-4 pt-2 text-lg xl:text-xl'>Education</h1>
           <h1 className='text-lg xl:text-xl p-1 mx-2'>Bachelor of Computer Applications(BCA)</h1>
         </div>
 
-        <div className='w-60 h-44 xl:h-48 xl:w-64 bg-transparent border-2 rounded-lg transition-all duration-500 hover:scale-105 hover:border-b-8 hover:border-r-8 hover:border-red-600'>
+        <div className='w-60 h-44 xl:h-48 xl:w-64 bg-transparent border-2 rounded-lg transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-red-600'>
           <p className='text-4xl px-5 pt-5'><VscFileSubmodule /></p>
           <h1 className='px-4 pt-2 text-lg xl:text-xl'>Projects</h1>
           <h1 className='text-lg xl:text-xl p-3 mx-3'>Built more than 5 projects</h1>

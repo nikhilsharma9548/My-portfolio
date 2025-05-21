@@ -3,7 +3,6 @@ import { HiOutlineBars2 } from "react-icons/hi2";
 import { GiCrossedBones } from "react-icons/gi";
 import { FaRegMessage } from "react-icons/fa6"; 
  import '../index.css';
-
 import { Link } from "react-scroll";
 // import { FaBars, FaTimes } from "react-icons/fa"; 
 import images from "../images/img3.png";
