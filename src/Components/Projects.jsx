@@ -1,14 +1,16 @@
 import React from "react";
 import WeatherApp from "../images/WeatherApp.png";
+import LMS from "../images/LMS.png";
 import { IoLogoGithub } from "react-icons/io";
 import { LuLink } from "react-icons/lu";
 const Projects = () => {
     const projectList = [
       {
-        title: "Tic Tac Toe Game",
+        title: "Learn Management System",
         description: "A classic two-player Tic Tac Toe game built using HTML ,CSS ,Javasript. Simple, fun, and interactive!",
         github: "https://github.com/nikhilsharma9548",
-        demo: "#",
+        demo: "http://learn-management-seven.vercel.app",
+        image:LMS,
         
       },
       {
