@@ -7,7 +7,7 @@ const Projects = () => {
     const projectList = [
       {
         title: "Learn Management System",
-        description:" a react js and ",
+        description:" An efficient platform for managing and tracking online learning.",
         github: "https://github.com/nikhilsharma9548",
         demo: "http://learn-management-seven.vercel.app",
         image:LMS,
