@@ -7,7 +7,7 @@ const Projects = () => {
     const projectList = [
       {
         title: "Learn Management System",
-        description: "A classic two-player Tic Tac Toe game built using HTML ,CSS ,Javasript. Simple, fun, and interactive!",
+        description:" a react js and ",
         github: "https://github.com/nikhilsharma9548",
         demo: "http://learn-management-seven.vercel.app",
         image:LMS,

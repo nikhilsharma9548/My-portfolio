@@ -60,11 +60,11 @@ const Header = () => {
         </div>
 
       
-        <div className="hidden md:flex items-center">
-          <h1 className="px-4 py-2 bg-white lg:text-xl text-lg md:text-sm rounded-full hover:cursor-pointer flex gap-2 hover:bg-black hover:text-white transition-all duration-300">
+        {/* <div className="hidden md:flex items-center">
+          <h1 className="px-4 py-2 bg-white lg:text-xl text-lg md:text-sm rounded-full hover:cursor-pointer flex gap-2 hover:bg-black hover:text-white transition-all duration-300 ">
             <FaRegMessage style={{ fontSize: "1.2em" }} /> CONTACT ME
           </h1>
-        </div>
+        </div> */}
 
   
         <div className="md:hidden text-2xl" onClick={toggleMenu}>
