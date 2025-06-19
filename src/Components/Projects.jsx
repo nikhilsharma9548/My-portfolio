@@ -9,7 +9,7 @@ const Projects = () => {
         title: "Learn Management System",
         description:" An efficient platform for managing and tracking online learning.",
         github: "https://github.com/nikhilsharma9548",
-        demo: "http://learn-management-seven.vercel.app",
+        demo: "https://learn-management-system-delta.vercel.app/",
         image:LMS,
         
       },
