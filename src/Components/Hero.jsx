@@ -11,24 +11,24 @@ const Hero = () => {
         <img
           src={img1}
           alt="Nikhil"
-          className="w-48 h-48 md:w-52 md:h-52 rounded-full shadow-lg  border-4 mt-20 border-white object-cover hover:scale-105 transition duration-300"
+          className="w-48 h-48 md:w-52 md:h-52 rounded-full shadow-sm border-2 mt-20 shadow-white object-cover hover:scale-105 transition duration-300"
         />
       </div>
 
         <h1 className="text-2xl md:text-3xl mt-10 font-bold mb-4">Hi, I'm <span className="text-red-600 text-4xl font-bold">Nikhil Sharma</span></h1>
         <p className="text-[12px] md:text-xl mb-6">Frontend Web Developer | I build beautiful UIs with React</p>
 
-        <div className="w-72 md:w-[300px] flex items-center text-center justify-between  md:mt-10">
-        <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341/"  target="_blank" className="px-2 py-2 flex gap-3  bg-red-400 hover:bg-red-700 rounded-full text-lg font-bold transition duration-300 ">
-        <FaBagShopping  className="text-[18px] mt-1"/>
-        
+        <div className="w-72 md:w-[300px] flex items-center text-center gap-16  md:mt-10">
+        <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341/" 
+           target="_blank"
+           className="px-3 py-2 flex gap-2  bg-red-500 hover:bg-red-700 rounded-full text-lg font-bold transition duration-300 ">
 
+        <FaBagShopping  className="text-[18px] mt-1"/>
           Hire me
-  
-            </a>
+        </a>
             <a
               href={Resume} download='Resume.pdf'
-              className="px-4 py-2 text-lg font-bold  bg-red-400 hover:bg-red-700 rounded-full transition duration-300"
+              className="px-4 py-2 text-lg font-bold  bg-red-500 hover:bg-red-700 rounded-full transition duration-300"
             >
               Resume
             </a>

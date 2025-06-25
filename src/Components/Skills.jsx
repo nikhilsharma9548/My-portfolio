@@ -37,11 +37,10 @@ const Skills = () => {
   return (
     <section
   id="Skills"
-  className="w-full px-4 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700 flex flex-col justify-center items-center text-center"
->
-  <h1 className="text-4xl font-bold mb-6">Skills</h1>
+  className="w-full px-4 pt-10 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700 flex flex-col justify-center items-center text-center">
+  <h1 className="md:text-4xl text-3xl font-semibold mb-6">Skills</h1>
   <p className="text-lg max-w-2xl mb-12">
-    I have a lot of experience in web development and I have worked with these technologies:
+    I have a lot of experience in web development <br />and I have worked with these technologies:
   </p>
 
   <div className="flex flex-wrap w-[70%] justify-center gap-6">
