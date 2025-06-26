@@ -70,7 +70,7 @@ const Contact = () => {
             </form>
         </div >
 
-        <div className='m-10  flex items-center justify-center gap-7'>
+        <div className='m-10 p-5 flex items-center justify-center gap-7'>
         {iconList.map((icon, index) => (
             <div key={index} className='w-12 h-12 rounded-full relative bottom-5 md:bottom-0 bg-white flex items-center justify-center shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-500 cursor-pointer'>
                 <a href={icon.link} target="_blank" rel="noopener noreferrer">
