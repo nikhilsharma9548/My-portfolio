@@ -3,7 +3,7 @@ import WeatherApp from "../images/WeatherApp.png";
 import LMS from "../images/Padho-Likho.png";
 import { IoLogoGithub } from "react-icons/io";
 import { LuLink } from "react-icons/lu";
-import chatApp from "../images/chatApp.png"
+import chatApp from "../images/chatApp.jpg"
 import { image } from "framer-motion/client";
 const Projects = () => {
     const projectList = [
@@ -27,7 +27,7 @@ const Projects = () => {
         title:"Chat App",
         description:"A Chat App bulid to using react js ,tailwind CSS, gemini API ",
         demo: "https://chat-app-one-alpha-88.vercel.app/",
-        image:chatApp
+        image:chatApp,
       }
     ];
   
