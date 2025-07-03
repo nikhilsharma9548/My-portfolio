@@ -4,7 +4,6 @@ import LMS from "../images/Padho-Likho.png";
 import { IoLogoGithub } from "react-icons/io";
 import { LuLink } from "react-icons/lu";
 import chatApp from "../images/chatApp.jpg"
-import { image } from "framer-motion/client";
 const Projects = () => {
     const projectList = [
       {
@@ -16,6 +15,12 @@ const Projects = () => {
         
       },
       {
+        title:"Chat App",
+        description:"A Chat App bulid to using react js ,tailwind CSS, gemini API ",
+        demo: "https://chat-app-one-alpha-88.vercel.app/",
+        image:chatApp,
+      },
+      {
         title: "Weather App",
         description: "A HTML, CSS, JS app that fetches live weather data using an API. Displays current temperature and conditions.",
         github: "https://github.com/nikhilsharma9548",
@@ -23,12 +28,6 @@ const Projects = () => {
         image:WeatherApp,
       
       },
-      {
-        title:"Chat App",
-        description:"A Chat App bulid to using react js ,tailwind CSS, gemini API ",
-        demo: "https://chat-app-one-alpha-88.vercel.app/",
-        image:chatApp,
-      }
     ];
   
     return (
@@ -40,7 +39,7 @@ const Projects = () => {
 
         <div className="max-w-7xl max-md:w-[80%]  mx-auto md:px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectList.map((project, index) => (
-            <div key={index} className="bg-white p-3 rounded-xl  shadow-md hover:shadow-xl transition duration-300">
+            <div key={index} className="bg-white p-3 rounded-xl hover:-translate-y-3 hover:duration-500 shadow-md hover:shadow-xl transition duration-500">
               {project.image && (
             <img src={project.image} alt={project.title} className="w-full h-48  object-cover rounded-md mb-4" />
     )}
