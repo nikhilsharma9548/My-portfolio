@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <>
-    <section className={`fixed top-0 left-0 w-full  bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif shadow-lg z-50
+    <section id="header"  className={` fixed top-0 left-0 w-full  bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif shadow-lg z-50
     
     `}>
       <div className="flex items-center justify-between h-20 px-4 md:px-10">
