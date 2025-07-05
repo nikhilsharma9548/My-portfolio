@@ -15,10 +15,10 @@ const Hero = () => {
         />
       </div>
 
-        <h1 className="text-xl md:text-2xl mt-10 font-semibold mb-4">Hi, I'm <span className="text-red-600/90 text-4xl md:text-4xl font-semibold">Nikhil Sharma</span></h1>
-        <p className="text-[12px] md:text-xl text-sm mb-6">Frontend Web Developer | I build beautiful UIs with React</p>
+        <h1 className="text-xl gap-2 md:text-2xl md:items-end flex max-md:flex-col mt-5 font-semibold mb-4">Hi, I'm<span className="text-red-600/90 text-4xl md:text-4xl font-semibold">Nikhil Sharma</span></h1>
+        <p className="text-[12px] flex max-md:flex-col md:text-xl text-sm mb-6 md:gap-2 "><span>Frontend Web Developer</span><span className="max-md:hidden">|</span><span> I build beautiful UIs with React</span></p>
 
-        <div className="w-72 md:w-[300px] flex items-center text-center gap-16  md:mt-10">
+        <div className="w-72 md:w-[300px] flex items-center justify-center text-center md:gap-16 gap-10 md:mt-10">
         <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341/" 
            target="_blank"
            className="px-3 py-2 flex gap-2  bg-red-500 hover:bg-red-700 rounded-full text-lg font-semibold transition duration-300 ">
