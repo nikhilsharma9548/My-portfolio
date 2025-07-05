@@ -11,12 +11,12 @@ const Hero = () => {
         <img
           src={img1}
           alt="Nikhil"
-          className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-sm border-2 shadow-white object-cover hover:scale-105 transition duration-300"
+          className="w-36 h-36 md:w-52 md:h-52 rounded-full shadow-sm border-2 shadow-white object-cover hover:scale-105 transition duration-300"
         />
       </div>
 
-        <h1 className="text-2xl md:text-3xl mt-10 font-bold mb-4">Hi, I'm <span className="text-red-600 text-4xl font-bold">Nikhil Sharma</span></h1>
-        <p className="text-[12px] md:text-xl mb-6">Frontend Web Developer | I build beautiful UIs with React</p>
+        <h1 className="text-xl md:text-2xl mt-10 font-bold mb-4">Hi, I'm <span className="text-red-600 text-3xl md:text-4xl font-bold">Nikhil Sharma</span></h1>
+        <p className="text-[12px] md:text-xl text-xs mb-6">Frontend Web Developer | I build beautiful UIs with React</p>
 
         <div className="w-72 md:w-[300px] flex items-center text-center gap-16  md:mt-10">
         <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341/" 
