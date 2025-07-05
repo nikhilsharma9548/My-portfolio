@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { HiOutlineBars2 } from "react-icons/hi2";
 import { GiCrossedBones } from "react-icons/gi";
-import { FaRegMessage } from "react-icons/fa6"; 
- import '../index.css';
 import { Link } from "react-scroll";
-// import { FaBars, FaTimes } from "react-icons/fa"; 
 import images from "../images/img3.png";
+import { menu, p } from "framer-motion/client";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +21,10 @@ const Header = () => {
   ];
 
   return (
-    <section className="fixed top-0 left-0 w-full  bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif shadow-lg z-50">
+    <>
+    <section className={`fixed top-0 left-0 w-full  bg-gradient-to-r from-gray-200 to-gray-700 text-black font-serif shadow-lg z-50
+    
+    `}>
       <div className="flex items-center justify-between h-20 px-4 md:px-10">
 
         <div className="flex items-center gap-4 md:gap-2">
@@ -38,11 +39,7 @@ const Header = () => {
       
         <div className="hidden md:flex items-center gap-6  text-xl">
           {navItems.map((item, i) => (
-            <h1
-              key={i}
-              href={item.link}
-              className="text-lg lg:text-xl hover:text-white transition-all duration-300"
-            >
+            
               <Link
                 key={i}
                 to={item.link}
@@ -55,58 +52,40 @@ const Header = () => {
               >
                 {item.name}
               </Link>
-            </h1>
+      
           ))}
         </div>
 
-      
-        {/* <div className="hidden md:flex items-center">
-          <h1 className="px-4 py-2 bg-white lg:text-xl text-lg md:text-sm rounded-full hover:cursor-pointer flex gap-2 hover:bg-black hover:text-white transition-all duration-300 ">
-            <FaRegMessage style={{ fontSize: "1.2em" }} /> CONTACT ME
-          </h1>
-        </div> */}
-
-  
-        <div className="md:hidden text-2xl" onClick={toggleMenu}>
-          {menuOpen ? <GiCrossedBones /> : <HiOutlineBars2 className="text-3xl" />}
+        <div className={` md:hidden text-2xl transform transition-transform duration-300 ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={toggleMenu}>
+          {menuOpen ? <GiCrossedBones/> : <HiOutlineBars2 />}
         </div>
       </div>
 
-    
-      {menuOpen && (
+     {/* mobile view  */}
+          {menuOpen && (
         <div id="menu" 
-        className="md:hidden absolute left-64 right-0  flex flex-col  items-end gap-4 rounded-md bg-gray-800 text-white py-4 px-4 shadow-lg transition-transform duration-300 ease-in-out z-50 ">
-
-          
-
+        className={`md:hidden flex flex-col border-black border-t-2 justify-center items-center 
+        `}>
           {navItems.map((item, i) => (
-            <h1
-              key={i}
-              href={item.link}
-              className="text-lg hover:text-gray-300 text-center w-full py-0 px-4  rounded-md hover:bg-gray-700 transition-all duration-300 "
-              onClick={() => setMenuOpen(false)}
-            >
-          
-             <Link
-             key={i}
-             to={item.link}
-             smooth={true}
-             duration={500}
-             offset={-70}
-             spy={true}
-             activeClass="active-link"
-             className="text-lg cursor-pointer pb-3 transition-all duration-300"
-           >
-             {item.name}
+           <Link
+           key={i}
+           to={item.link}
+           smooth={true} 
+           duration={500}
+           offset={true}
+           spy={true}
+           activeClass="active-link"
+           className="text-lg cursor-pointer w-20  flex flex-col justify-center items-center pb-2 transition-all duration-300 "
+           onClick={() => setMenuOpen(false) }>{item.name}
            </Link>
-            </h1>
           ))}
-          {/* <button  className="flex items-center  rounded-full  text-center w-full py-0 px-10  hover:bg-gray-700 transition-all duration-300">
-             Contact-Me
-          </button> */}
         </div>
       )}
     </section>
+
+    
+      
+    </>
   );
 };
 

@@ -39,33 +39,31 @@ const Contact = () => {
       
 
     return(
-       <section  id="Contact" className=" md:pt-14 pt-5 bg-gradient-to-r from-gray-200 to-gray-700 h-full overflow-hidden  flex-col justify-center sm:pt-0">
+       <section  id="Contact" className=" md:pt-10 pt-24 bg-gradient-to-r from-gray-200 to-gray-700 h-full overflow-hidden  flex-col justify-center sm:pt-0">
         <h1 className='flex items-center justify-center text-4xl font-bold'>Contact-Me</h1>
         <p className='text-center text-xl md:text-2xl mt-20'>Please Fill out the form below to discuss anywork opportunities.</p>
         <div className='mt-10 '>
             <form
             onSubmit={handleSubmit(onSubmit)}
-            // action="https://getform.io/f/bjjmpqzb"
-            // method="POST"
              className='flex flex-col items-center text-xl justify-center gap-4 mt-10  '>
                 <input 
-                {...register("name", { required: true })}
+                {...register("name", { required: true})}
                 type="text"
                 name='name'
                 placeholder='Name' className='w-[80%] md:w-[38%] h-14 rounded-md border-2 border-gray-400 px-4'/>
-                {errors.name && <span>This field is required</span>}
+                {errors.name && <span className='text-sm flex'>This field is required</span>}
 
                 <input
                   {...register("email", { required: true })} 
                 type="email"
                 name='email'
                 placeholder='Email' className='w-[80%] md:w-[38%] h-14 rounded-md border-2 border-gray-400 px-4'/>
-                 {errors.email && <span>This field is required</span>}
+                 {errors.email && <span className='text-sm flex'>This field is required</span>}
                 <textarea 
                 {...register("message", { required: true })} 
                 name='message'
                 placeholder='Message' className='w-[80%] md:w-[38%] h-48 rounded-md border-2 border-gray-400 px-4'/>
-                {errors.message && <span>This field is required</span>}
+                {errors.message && <span className='text-sm flex'>This field is required</span>}
                 <button type="submit" className='bg-black text-white w-36 h-12  rounded-md'>Send</button>
             </form>
         </div >

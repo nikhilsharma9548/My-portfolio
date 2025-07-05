@@ -7,7 +7,7 @@ import image4 from "../images/img2.jpg";
 
 const About = () => {
   return ( 
-    <section id='About' className=" w-full pb-20  flex-col md:flex-row  pt-10 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
+    <section id='About' className=" w-full   flex-col md:flex-row  pt-24 md:pt-10 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
   <h1 className=' text-4xl md:text-3xl text-center font-semibold '>ABOUT-ME</h1>
 
   <div className='flex flex-col xl:flex-row  justify-center  gap-5  px-4'>
