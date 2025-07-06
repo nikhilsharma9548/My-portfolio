@@ -32,7 +32,7 @@ const Projects = () => {
     ];
   
     return (
-      <section id="projects"  className="pt-24 md:pt-10 bg-gradient-to-r from-gray-200 to-gray-700 text-gray-800">
+      <section id="projects"  className="pt-24 pb-10 md:pt-10 bg-gradient-to-r from-gray-200 to-gray-700 text-gray-800">
         <div className="text-center mb-10">
           <h2 className="md:text-4xl text-3xl font-semibold">My Projects</h2>
           <p className="md:text-lg text-base mt-2">Some cool stuff I’ve built recently 👇</p>
