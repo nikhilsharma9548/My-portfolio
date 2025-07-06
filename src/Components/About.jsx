@@ -28,8 +28,8 @@ const About = () => {
     </motion.div>
     <div className='xl:w-[60%] w-full flex flex-col justify-center items-center gap-14 '>
       <motion.h1 
-      initial={{opacity:0,translateY:"-100%"}}
-      whileInView={{opacity:1,translateY:0}}
+      initial={{opacity:0,translateX:100}}
+      whileInView={{opacity:1,translateX:0}}
       transition={{duration:0.7}}
       className="text-center sm:text-lg md:text-xl max-xl:w-[70vw] leading-relaxed ">
         I am a <span className='font-semibold'>Frontend Web Developer</span>. I build projects using <span className='font-semibold'> HTML, CSS, JavaScript, React, and TailwindCSS</span>. I am always eager to learn new technologies and improve my skills.
