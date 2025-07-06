@@ -39,7 +39,7 @@ const Contact = () => {
       
 
     return(
-       <section  id="Contact" className=" md:pt-10 pt-28  bg-gradient-to-r from-gray-200 to-gray-700 h-full overflow-hidden  flex-col justify-center sm:pt-0">
+       <section  id="Contact" className=" md:pt-10 pt-24  bg-gradient-to-r from-gray-200 to-gray-700 h-full overflow-hidden  flex-col justify-center sm:pt-0">
         <h1 className='flex items-center justify-center text-3xl font-semibold'>Contact-Me</h1>
         <p className='text-center text-xl md:text-2xl mt-10 px-5'>Please Fill out the form below to discuss anywork opportunities.</p>
         <div className='mt-10 '>
