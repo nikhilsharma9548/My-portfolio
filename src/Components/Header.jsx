@@ -67,7 +67,7 @@ const Header = () => {
         <motion.div id="menu" 
          initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
+            exit={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.3 }}
         className={`md:hidden bg-inherit flex flex-col rounded-b-full border-black border-t justify-center items-center p-3 `}>
          
@@ -81,7 +81,7 @@ const Header = () => {
             offset={true}
             spy={true}
             activeClass="active-link"
-            className="text-lg cursor-pointer  p-0.7 flex flex-col justify-center items-center pb-2 px-20 rounded-lg transition-all duration-300 "
+            className="text-lg cursor-pointer  p-0.7 flex flex-col justify-center items-center pb-2 px-20 rounded transition-all duration-300 "
             onClick={() => setMenuOpen(false) }>{item.name}
           </Link>
           ))}
