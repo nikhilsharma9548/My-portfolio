@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineBars2 } from "react-icons/hi2";
 import { GiCrossedBones } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import images from "../images/img3.png";
 import { motion, AnimatePresence } from "framer-motion";
 
