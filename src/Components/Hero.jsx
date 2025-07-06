@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaBagShopping } from "react-icons/fa6";
 import Resume from "../images/Resume.pdf";
 import img1 from "../images/img1.jpg";
 const Hero = () => {  
+  
     return (
       
       <section id='Home' className="max-md:h-screen md:mt-20 flex md:pt-14 md:pb-28  flex-col max-md:justify-center items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
   
-         <div className=" mt-0 md:w-1/2 flex justify-center">
+         <div className=" mt-0 md:w-1/2 flex justify-center"
+         
+         >
           <img
             src={img1}
             alt="Nikhil"
