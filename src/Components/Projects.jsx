@@ -1,4 +1,5 @@
 import React from "react";
+import{motion} from 'motion/react';
 import WeatherApp from "../images/WeatherApp.png";
 import LMS from "../images/Padho-Likho.png";
 import { IoLogoGithub } from "react-icons/io";
@@ -34,13 +35,27 @@ const Projects = () => {
     return (
       <section id="projects"  className="pt-24 pb-10 md:pt-10 bg-gradient-to-r from-gray-200 to-gray-700 text-gray-800">
         <div className="text-center mb-10">
-          <h2 className="md:text-4xl text-3xl font-semibold">My Projects</h2>
-          <p className="md:text-lg text-base mt-2">Some cool stuff I’ve built recently 👇</p>
+          <motion.h2 
+          initial ={{opacity:0, translateY:"-100%"}}
+          whileInView={{opacity:1,translateY:0}}
+          transition={{duration:0.5}}
+
+          className="md:text-4xl text-3xl font-semibold">My Projects</motion.h2>
+          <motion.p 
+          initial ={{opacity:0, translateX: 100}}
+          whileInView={{opacity:1,translateX:0}}
+          transition={{duration:0.5}}
+          className="md:text-lg text-base mt-2">Some cool stuff I’ve built recently 👇</motion.p>
         </div>
 
         <div className="max-w-7xl max-md:w-[80%]  mx-auto md:px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectList.map((project, index) => (
-            <div key={index} className="bg-white p-3 rounded-xl hover:-translate-y-3 hover:duration-500 shadow-md hover:shadow-xl transition duration-500">
+            <motion.div 
+            initial ={{opacity:0, scale:0.8}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0.3}}
+
+            key={index} className="bg-white p-3 rounded-xl hover:-translate-y-3 hover:duration-500 shadow-md hover:shadow-xl transition duration-500">
               {project.image && (
             <img src={project.image} alt={project.title} className="w-full h-48  object-cover rounded-md mb-4" />
     )}
@@ -62,7 +77,7 @@ const Projects = () => {
                  <LuLink />
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
