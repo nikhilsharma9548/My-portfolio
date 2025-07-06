@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { HiOutlineBars2 } from "react-icons/hi2";
 import { GiCrossedBones } from "react-icons/gi";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import images from "../images/img3.png";
 import { motion, AnimatePresence } from "framer-motion";
-import { div } from "framer-motion/client";
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
