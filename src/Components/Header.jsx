@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <>
-    <section id="header"  className={`fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-700 text-black  shadow-lg z-50 
+    <section id="header"  className={`fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-700 text-black ${menuOpen ? "" : "shadow-lg"} z-50 
     `}>
       <div className="flex items-center justify-between h-20 px-4 md:px-10">
 
@@ -47,8 +47,8 @@ const Header = () => {
                 duration={500}
                 offset={-70}
                 spy={true}
-                activeClass="active-link"
-                className="text-lg cursor-pointer pb-3 transition-all duration-300"
+                activeClass="active-link-1"
+                className="text-lg cursor-pointer pb-3 transition-all duration-500 hover:text-white"
               >
                 {item.name}
               </Link>
@@ -69,7 +69,7 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.3 }}
-        className={`md:hidden bg-inherit flex flex-col transform duration-150 rounded-b-full border-black border-t justify-center items-center p-3 `}>
+        className={`md:hidden bg-inherit flex flex-col rounded-b-full border-black border-t justify-center items-center p-3 `}>
          
          <div className=" border-2 border-gray-700/80 px-4 py-2 rounded-lg">
            {navItems.map((item, i) => (
@@ -81,7 +81,7 @@ const Header = () => {
             offset={true}
             spy={true}
             activeClass="active-link"
-            className="text-lg cursor-pointer p-0.5 flex flex-col justify-center items-center pb-2 px-28 rounded-lg transition-all duration-300 "
+            className="text-lg cursor-pointer  p-0.7 flex flex-col justify-center items-center pb-2 px-20 rounded-lg transition-all duration-300 "
             onClick={() => setMenuOpen(false) }>{item.name}
           </Link>
           ))}

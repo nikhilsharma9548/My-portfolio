@@ -13,5 +13,9 @@
 
 }
 .active-link {
-  border-bottom: 2px solid white;
+  background-color: gray;
+  animation-duration: 0s;
+}
+.active-link-1{
+  color: rgb(255, 255, 255);
 }
