@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <>
-    <section id="header"  className={` fixed top-0 left-0 w-full  bg-gradient-to-r from-gray-200 to-gray-700 text-black  shadow-lg z-50
+    <section id="header"  className={`fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-700 text-black  shadow-lg z-50 
     `}>
       <div className="flex items-center justify-between h-20 px-4 md:px-10">
 
@@ -65,9 +65,9 @@ const Header = () => {
       <AnimatePresence>
           {menuOpen && (
         <motion.div id="menu" 
-         initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -50 }}
+         initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.3 }}
         className={`md:hidden bg-inherit flex flex-col transform duration-150 rounded-b-full border-black border-t justify-center items-center p-3 `}>
          

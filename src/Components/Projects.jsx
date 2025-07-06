@@ -9,7 +9,7 @@ const Projects = () => {
       {
         title: "Learn Management System",
         description:" An efficient platform for managing and tracking online learning.",
-        github: "https://github.com/nikhilsharma9548",
+        github: "https://github.com/nikhilsharma9548/Learn-management-system",
         demo: "https://learn-management-system-delta.vercel.app/",
         image:LMS,
         
@@ -17,13 +17,14 @@ const Projects = () => {
       {
         title:"Chat App",
         description:"A Chat App bulid to using react js ,tailwind CSS, gemini API ",
+        github: "https://github.com/nikhilsharma9548/ChatApp",
         demo: "https://chat-app-one-alpha-88.vercel.app/",
         image:chatApp,
       },
       {
         title: "Weather App",
         description: "A HTML, CSS, JS app that fetches live weather data using an API. Displays current temperature and conditions.",
-        github: "https://github.com/nikhilsharma9548",
+        github: "https://github.com/nikhilsharma9548/weather-app",
         demo: "https://weather-app-kohl-five-70.vercel.app",
         image:WeatherApp,
       

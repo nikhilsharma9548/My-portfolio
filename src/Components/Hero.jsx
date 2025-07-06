@@ -7,13 +7,13 @@ const Hero = () => {
       
       <section id='Home' className="max-md:h-screen md:mt-20 flex md:pt-14 md:pb-28  flex-col max-md:justify-center items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
   
-         <div className=" md:mt-0 md:w-1/2 flex justify-center">
-        <img
-          src={img1}
-          alt="Nikhil"
-          className="w-36 h-36 md:w-52 md:h-52 rounded-full shadow-sm border-2 shadow-white object-cover hover:scale-105 transition duration-300"
+         <div className=" mt-0 md:w-1/2 flex justify-center">
+          <img
+            src={img1}
+            alt="Nikhil"
+            className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-sm border-2 shadow-white object-cover hover:scale-105 transition duration-300"
         />
-      </div>
+        </div>
 
         <h1 className="text-xl gap-2 md:text-2xl md:items-end flex max-md:flex-col mt-5 font-semibold mb-4">Hi, I'm<span className="text-red-600/90 text-4xl md:text-4xl font-semibold">Nikhil Sharma</span></h1>
         <p className="text-[12px] flex max-md:flex-col md:text-xl text-sm mb-6 md:gap-2 "><span>Frontend Web Developer</span><span className="max-md:hidden">|</span><span> I build beautiful UIs with React</span></p>
