@@ -59,7 +59,7 @@ const Skills = () => {
   <div className="flex flex-wrap w-[70%] justify-center gap-6">
     {SkillsList.map((skill, index) => (
       <motion.div
-      initial={{opacity:0,scale:0}}
+        initial={{opacity:0,scale:0}}
       whileInView={{opacity:1,scale:1}}
       transition={{duration:0.5}}
       

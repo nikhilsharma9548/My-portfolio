@@ -41,29 +41,23 @@ const About = () => {
               transition={{duration:0.5}}
       className='flex flex-col pb-5 md:w-[90%] justify-center lg:w-full md:flex-row items-center md:items-start gap-6 md:gap-10'>
 
-        <motion.div
-          
-        className='w-72 h-44 xl:h-40 xl:w-60 bg-transparent  border rounded-lg transition-all  duration-500 hover:-translate-y-1  hover:shadow-[5px_5px_2px_rgba(0,0,0,7)] hover:shadow-red-600/70'>
+        <div className='w-72 h-44 xl:h-40 xl:w-60 bg-transparent  border rounded-lg transition-all  duration-500 hover:-translate-y-1  hover:shadow-[5px_5px_2px_rgba(0,0,0,7)] hover:shadow-red-600/70'>
           <p className='text-4xl p-3'><FaCode /></p>
           <p className='px-4 pt-2 text-xl'>Languages</p>
           <p className=' p-1 mx-2'>HTML, CSS, JavaScript, ReactJS, TailwindCSS</p>
-        </motion.div>
+        </div>
 
-        <motion.div 
-        
-        className='w-72 h-44 xl:h-40 xl:w-60 bg-transparent border rounded-lg  duration-500 hover:-translate-y-1 hover:shadow-[5px_5px_2px_rgba(0,0,0,7)]  hover:shadow-red-600/70'>
+        <div className='w-72 h-44 xl:h-40 xl:w-60 bg-transparent border rounded-lg  duration-500 hover:-translate-y-1 hover:shadow-[5px_5px_2px_rgba(0,0,0,7)]  hover:shadow-red-600/70'>
           <p className='text-4xl px-5 pt-5'><PiGraduationCapFill /></p>
           <h1 className='px-4 pt-2 text-xl'>Education</h1>
           <h1 className='p-1 mx-2'>Bachelor of Computer Applications(BCA)</h1>
-        </motion.div>
+        </div>
 
-        <motion.div
-           
-        className='w-72 h-44 xl:h-40 xl:w-60 bg-transparent border rounded-lg transition-all  duration-500 hover:-translate-y-1 hover:shadow-[5px_5px_2px_rgba(0,0,0,7)]  hover:shadow-red-600/70'>
+        <div className='w-72 h-44 xl:h-40 xl:w-60 bg-transparent border rounded-lg transition-all  duration-500 hover:-translate-y-1 hover:shadow-[5px_5px_2px_rgba(0,0,0,7)]  hover:shadow-red-600/70'>
           <p className='text-4xl px-5 pt-5'><VscFileSubmodule /></p>
           <h1 className='px-4 pt-2 text-xl'>Projects</h1>
           <h1 className=' p-3 '>Built more than 5 projects</h1>
-        </motion.div>
+        </div>
       </motion.div>
     </div>
   </div>

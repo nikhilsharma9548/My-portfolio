@@ -31,27 +31,21 @@ const Hero = () => {
          initial={{opacity: 0, translateX:100 }}
          animate={{opacity: 1, translateX:0 }}
          transition={{duration:0.5}}
-
         className="text-[12px] flex max-md:flex-col md:text-xl text-sm mb-6 md:gap-2 "><span>Frontend Web Developer</span><span className="max-md:hidden">|</span><span> I build beautiful UIs with React</span></motion.p>
 
-        <div className="w-72 md:w-[300px] flex items-center justify-center text-center md:gap-16 gap-10 md:mt-10 ">
-
-            <motion.a 
-              initial={{opacity: 0, x:-50 }}
-              animate={{opacity: 1, x:0  }}
-              transition={{duration:0.5}}
-            href="https://www.linkedin.com/in/nikhil-sharma-43a013341/" 
+        <motion.div 
+            initial={{opacity: 0, y:-50 }}
+            animate={{opacity: 1, y:0  }}
+            transition={{duration:0.5}}
+        className="w-72 md:w-[300px] flex items-center justify-center text-center md:gap-16 gap-10 md:mt-10 ">
+            <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341/" 
               target="_blank"
               className="px-3 py-2 flex gap-2 border-gray-700 border bg-red-500 hover:bg-red-700 rounded-full text-lg font-semibold transition duration-300 ">
-            <FaBagShopping  className="text-[18px] mt-1"/>Hire me</motion.a>
+            <FaBagShopping  className="text-[18px] mt-1"/>Hire me</a>
 
-            <motion.a 
-              initial={{opacity: 0, x:50 }}
-              animate={{opacity: 1, x:0  }}
-              transition={{duration:0.5}}
-            href={Resume} download='Resume.pdf'
-              className="px-4 py-2 text-lg font-semibold border-gray-700 border bg-red-500 hover:bg-red-700 rounded-full transition duration-300">Resume</motion.a>
-        </div>
+            <a href={Resume} download='Resume.pdf'
+              className="px-4 py-2 text-lg font-semibold border-gray-700 border bg-red-500 hover:bg-red-700 rounded-full transition duration-300">Resume</a>
+        </motion.div>
         
     </section>
     );

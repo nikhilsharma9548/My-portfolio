@@ -38,9 +38,8 @@ const Header = () => {
 
       
         <div className="hidden md:flex items-center gap-6  text-xl">
-          {navItems.map((item, i) => (
-            
-              <Link
+          {navItems.map((item, i) => (  
+             <Link
                 key={i}
                 to={item.link}
                 smooth={true}
@@ -49,7 +48,7 @@ const Header = () => {
                 spy={true}
                 activeClass="active-link-1"
                 className="text-lg cursor-pointer pb-3 transition-all duration-500 hover:text-white"
-              >
+                 >
                 {item.name}
               </Link>
       
