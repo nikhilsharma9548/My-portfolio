@@ -16,9 +16,9 @@ const About = () => {
 
   <div className='flex flex-col xl:flex-row  justify-center  gap-5  px-4'>
     <motion.div className="flex justify-center w-full md:w-auto"
-    initial={{opacity:0,translateX:"-100%"}}
+    initial={{opacity:0,translateX:-100,}}
     whileInView={{opacity:1,translateX:0}}
-    transition={{duration:0.7}}
+    transition={{duration:0.8}}
     >
       <img
         src={image4}

@@ -48,7 +48,7 @@ const Skills = () => {
   className="md:text-4xl text-3xl font-semibold mb-6">Skills</motion.h1>
 
   <motion.p
-      initial={{opacity:0,translateX:"100%"}}
+      initial={{opacity:0,translateX:100}}
       whileInView={{opacity:1,translateX:0}}
       transition={{duration:0.7}}
 
