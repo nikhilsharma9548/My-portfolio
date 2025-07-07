@@ -6,7 +6,7 @@ const Hero = () => {
   
     return (
       
-    <section id='Home' className="max-md:h-screen md:mt-20 flex md:pt-20 md:pb-28  flex-col max-md:justify-center items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
+    <section id='Home' className="max-md:h-screen flex md:pt-40 md:pb-28  flex-col max-md:justify-center items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
 
         <motion.div className=" mt-0 md:w-1/2 flex justify-center"
          initial={{opacity: 0, scale: 0.5}}

@@ -25,7 +25,7 @@ const Header = () => {
     <>
     <section id="header"  className={`fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-700 text-black ${menuOpen ? "" : "shadow-lg"} z-50 
     `}>
-      <div className="flex items-center justify-between h-20 px-4 md:px-10">
+      <div className={`flex items-center justify-between  h-20 px-4 md:px-10 ${menuOpen && "border-black border-b"}`}>
 
         <div className="flex items-center gap-4 md:gap-3">
           <img
@@ -37,7 +37,7 @@ const Header = () => {
         </div>
 
       
-        <div className="hidden md:flex items-center gap-6  text-xl">
+        <div className=" px-5 py-3 rounded-full bg-gray-800/50 shadow-md shadow-black hidden md:flex border  gap-6  text-xl">
           {navItems.map((item, i) => (  
              <Link
                 key={i}
@@ -47,7 +47,7 @@ const Header = () => {
                 offset={-70}
                 spy={true}
                 activeClass="active-link-1"
-                className="text-lg cursor-pointer pb-3 transition-all duration-500 hover:text-white"
+                className="text-lg cursor-pointer px-1.5  transition-all duration-500 hover:text-white"
                  >
                 {item.name}
               </Link>
@@ -68,9 +68,9 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.3 }}
-        className={`md:hidden bg-inherit flex flex-col rounded-b-full border-black border-t justify-center items-center p-3 `}>
+        className={`md:hidden bg-inherit flex flex-col justify-center items-end p-3 `}>
          
-         <div className=" border-2 border-gray-700/80 px-4 py-2 rounded-lg">
+         <div className=" border-2 flex flex-col gap-1.5  border-gray-700/80 bg-gray-600 px-4 py-2  rounded-lg">
            {navItems.map((item, i) => (
           <Link  
           key={i}
@@ -80,7 +80,7 @@ const Header = () => {
             offset={true}
             spy={true}
             activeClass="active-link"
-            className="text-lg cursor-pointer  p-0.7 flex flex-col justify-center items-center pb-2 px-20 rounded transition-all duration-300 "
+            className="text-lg cursor-pointer  p-0.7 flex flex-col bg-gray-700 justify-center items-center pb-2 px-20 transition-all duration-150 "
             onClick={() => setMenuOpen(false) }>{item.name}
           </Link>
           ))}
