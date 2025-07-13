@@ -40,11 +40,11 @@ const Hero = () => {
         className="w-72 md:w-[300px] flex items-center justify-center text-center md:gap-16 gap-10 md:mt-10 ">
             <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341/" 
               target="_blank"
-              className="px-3 py-2 flex gap-2 border-gray-700 border bg-red-500 hover:bg-red-700 rounded-full text-lg font-semibold transition duration-300 ">
+              className="px-3 py-2 flex gap-2 border-gray-700 border bg-red-500 hover:bg-red-700 rounded-full text-lg md:font-semibold transition duration-300 ">
             <FaBagShopping  className="text-[18px] mt-1"/>Hire me</a>
 
             <a href={Resume} download='Resume.pdf'
-              className="px-4 py-2 text-lg font-semibold border-gray-700 border bg-red-500 hover:bg-red-700 rounded-full transition duration-300">Resume</a>
+              className="px-4 py-2 text-lg md:font-semibold border-gray-700 border bg-red-500 hover:bg-red-700 rounded-full transition duration-300">Resume</a>
         </motion.div>
         
     </section>
