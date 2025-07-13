@@ -81,7 +81,7 @@ const Header = () => {
             offset={true}
             spy={true}
             activeClass="active-link"
-            className="text-lg cursor-pointer  p-0.7 flex flex-col bg-gray-700 justify-center items-center pb-2 px-20 transition-all duration-150 "
+            className="text-lg cursor-pointer  p-0.7 flex flex-col bg-gray-700/90 justify-center items-center pb-2 px-20 transition-all duration-150 "
             onClick={() => setMenuOpen(false) }>{item.name}
           </Link>
           ))}
