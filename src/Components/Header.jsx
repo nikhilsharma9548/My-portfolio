@@ -1,17 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { HiOutlineBars2 } from "react-icons/hi2";
 import { RxCross1 } from "react-icons/rx";
 import { Link } from "react-scroll";
 import images from "../images/img3.png";
 import { motion, AnimatePresence } from "framer-motion";
+import { div } from "framer-motion/client";
 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const sidebarRef = useRef(null);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+     useEffect(() => {
+      function handleClickOutside(event) {
+        if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+          setMenuOpen(false);
+        }
+      }
+
+      if (menuOpen) {
+        document.addEventListener("mousedown", handleClickOutside);
+      } else {
+        document.removeEventListener("mousedown", handleClickOutside);
+      }
+
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [menuOpen, setMenuOpen, sidebarRef]);
 
   const navItems = [
     { name: "Home", link: "Home" },
@@ -23,9 +39,9 @@ const Header = () => {
 
   return (
     <>
-    <section id="header"  className={`fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-600 text-black ${menuOpen ? "" : "shadow-lg"} z-50 
+    <section id="header"  className={`fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-600 text-black z-50 
     `}>
-      <div className={`flex items-center justify-between  h-20 px-4 md:px-10 ${menuOpen && "border-black border-b"}`}>
+      <div className={`flex items-center justify-between  h-20 px-4 md:px-10 `}>
 
         <div className="flex items-center gap-4 md:gap-3">
           <img
@@ -37,7 +53,7 @@ const Header = () => {
         </div>
 
       
-        <div className=" px-5 py-3 rounded-full bg-gray-600 shadow-md shadow-black hidden md:flex border  gap-6  text-xl">
+        <div className=" px-5 py-3 rounded-full bg-gray-600/40 shadow-md shadow-black  hidden md:flex border  gap-6  text-xl">
           {navItems.map((item, i) => (  
              <Link
                 key={i}
@@ -47,7 +63,7 @@ const Header = () => {
                 offset={-70}
                 spy={true}
                 activeClass="active-link-1"
-                className="text-lg cursor-pointer px-1.5  transition-all duration-500 hover:text-white"
+                className="text-lg cursor-pointer px-1.5  transition-all duration-300 hover:text-white"
                  >
                 {item.name}
               </Link>
@@ -55,19 +71,60 @@ const Header = () => {
           ))}
         </div>
 
-        <div className={` md:hidden text-2xl transform transition-transform duration-150 ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={toggleMenu}>
+        <div className={` md:hidden text-2xl transform transition-transform duration-150 ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <RxCross1/> : <HiOutlineBars2 className="text-3xl"/>}
         </div>
       </div>
 
-     {/* mobile view  */}
 
-      <AnimatePresence>
+    </section>
+
+   <AnimatePresence>
+          {menuOpen &&(
+            <div className='fixed inset-0 bg-black/40 z-40 md:hidden '>
+              <motion.div
+               initial ={{x: 1500}}
+              animate ={{x:10}}
+              exit={{x:400}}
+              transition={{duration:0.25}}
+              ref={sidebarRef}
+              className="bg-gradient-to-br from-gray-200 to-gray-600 w-60 p-7 inset-0  fixed top-0 h-full justify-self-end pt-24"
+              >
+
+              <div className="flex flex-col gap-1.5 px-4 py-2">
+           {navItems.map((item, i) => (
+          <Link  
+            key={i}
+            to={item.link}
+            smooth={true} 
+            duration={500}
+            offset={true}
+            spy={true}
+            activeClass="active-link"
+            className="text-lg cursor-pointer flex flex-col justify-center items-center pb-2 transition-all duration-150 "
+            onClick={() => setMenuOpen(false) }>{item.name}
+          </Link>
+          ))}
+         </div>
+
+              </motion.div>
+            </div>
+          )}
+   </AnimatePresence> 
+      
+    </>
+  );
+};
+
+export default Header;
+
+
+{/* <AnimatePresence>
           {menuOpen && (
         <motion.div id="menu" 
-         initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 50 }}
+         initial={{x: 50 }}
+            animate={{x: 0 }}
+            exit={{ x: 500 }}
             transition={{ duration: 0.3 }}
         className={`md:hidden bg-inherit flex flex-col justify-center items-end p-3 `}>
          
@@ -88,13 +145,4 @@ const Header = () => {
          </div>
         </motion.div>
       )}
-      </AnimatePresence>
-    </section>
-
-    
-      
-    </>
-  );
-};
-
-export default Header;
+      </AnimatePresence> */}

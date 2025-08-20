@@ -6,6 +6,9 @@ import img3 from '../images/JS.webp';
 import img4 from '../images/React.webp';
 import img5 from '../images/Tailwind.webp';
 import img6 from '../images/nodeJS.webp';
+import img7 from '../images/expressJs.png';
+import img8 from '../images/MongoDB.png';
+import img9 from '../images/github.webp';
 
 const Skills = () => {
 
@@ -33,6 +36,18 @@ const Skills = () => {
         {
             name: "node-JS",
             image: img6
+        },
+         {
+            name: "Express-JS",
+            image: img7
+        },
+        {
+            name: "MongoDB",
+            image: img8
+        },
+        {
+            name: "Github",
+            image: img9
         },
     ]
 
@@ -64,7 +79,8 @@ const Skills = () => {
       transition={{duration:0.5}}
       
         key={index}
-        className="bg-white w-72 h-14 border border-black p-2 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-700 flex items-center gap-4 cursor-pointer">
+        className="bg-white w-72 h-14 border border-black p-2 rounded-xl shadow-lg hover:shadow-2xl
+                   transition-all hover:scale-105 duration-700 flex items-center gap-4 cursor-pointer">
         <img
           src={skill.image}
           alt={skill.name}

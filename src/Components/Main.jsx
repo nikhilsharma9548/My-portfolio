@@ -8,7 +8,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 const Main = () => {
   return (
-    <div className='flex flex-col  h-full overflow-hidden'>
+    <div className='flex flex-col  h-full overflow-hidden '>
     <Header/>
     <Hero />
     <About />

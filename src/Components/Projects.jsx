@@ -5,13 +5,14 @@ import LMS from "../images/Padho-Likho.png";
 import { IoLogoGithub } from "react-icons/io";
 import { LuLink } from "react-icons/lu";
 import chatApp from "../images/chatApp.jpg"
+import Auth from "../images/DoremonAuth.png";
 const Projects = () => {
     const projectList = [
       {
         title: "Learn Management System",
         description:" An efficient platform for managing and tracking online learning.",
         github: "https://github.com/nikhilsharma9548/Learn-management-system",
-        demo: "https://learn-management-system-delta.vercel.app/",
+        demo: "https://learn-management-system-delta.vercel.app",
         image:LMS,
         
       },
@@ -19,7 +20,7 @@ const Projects = () => {
         title:"Chat App",
         description:"A Chat App bulid to using react js ,tailwind CSS, gemini API ",
         github: "https://github.com/nikhilsharma9548/ChatApp",
-        demo: "https://chat-app-one-alpha-88.vercel.app/",
+        demo: "https://chat-app-one-alpha-88.vercel.app",
         image:chatApp,
       },
       {
@@ -28,6 +29,13 @@ const Projects = () => {
         github: "https://github.com/nikhilsharma9548/weather-app",
         demo: "https://weather-app-kohl-five-70.vercel.app",
         image:WeatherApp,
+      },
+      {
+        title: "User Authentication App",
+        description: "A simple user authentication app built with React, Node.js, and MongoDB.It allows users to register, login, verify Email, reset thier password also in their profiles.",
+        github: "https://github.com/nikhilsharma9548/DoremonAuth",
+        demo: "https://doremon-auth-frontend.vercel.app",
+        image:Auth,
       
       },
     ];

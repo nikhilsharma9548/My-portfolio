@@ -31,8 +31,8 @@ const About = () => {
       initial={{opacity:0,translateX:100}}
       whileInView={{opacity:1,translateX:0}}
       transition={{duration:0.7}}
-      className="text-center sm:text-lg md:text-xl max-xl:w-[70vw] leading-relaxed ">
-        I am a <span className='font-semibold'>Frontend Web Developer</span>. I build projects using <span className='font-semibold'> HTML, CSS, JavaScript, React, and TailwindCSS</span>. I am always eager to learn new technologies and improve my skills.
+      className="sm:pl-10 md:text-lg text-start max-xl:w-[72vw] leading-relaxed ">
+        I am a <span className='font-semibold'>FullStack Web Developer</span>. I build projects using <span className='font-semibold'> HTML, CSS, JavaScript, React,TailwindCSS for Frontend and use Express,and MongoDB </span>for backend . I am always eager to learn new technologies and improve my skills.
       </motion.h1>
 
       <motion.div
@@ -43,8 +43,8 @@ const About = () => {
 
         <div className='w-72 h-44 xl:h-40 xl:w-60 bg-transparent  border rounded-lg transition-all  duration-500 hover:-translate-y-1  hover:shadow-[5px_5px_2px_rgba(0,0,0,7)] hover:shadow-red-600/70'>
           <p className='text-4xl p-3'><FaCode /></p>
-          <p className='px-4 pt-2 text-xl'>Languages</p>
-          <p className=' p-1 mx-2'>HTML, CSS, JavaScript, ReactJS, TailwindCSS</p>
+          <p className='px-4 text-xl'>Languages</p>
+          <p className='text-sm p-1 mx-2'>HTML, CSS, JavaScript, ReactJS, TailwindCSS, Express-JS MongoDB</p>
         </div>
 
         <div className='w-72 h-44 xl:h-40 xl:w-60 bg-transparent border rounded-lg  duration-500 hover:-translate-y-1 hover:shadow-[5px_5px_2px_rgba(0,0,0,7)]  hover:shadow-red-600/70'>
