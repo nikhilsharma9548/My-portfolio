@@ -29,6 +29,24 @@ const Header = () => {
       };
     }, [menuOpen, setMenuOpen, sidebarRef]);
 
+     const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    
+    const handleScroll = () => {
+      if (window.scrollY > 20) { // 50px se zyada scroll par color change
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const navItems = [
     { name: "Home", link: "Home" },
     { name: "About", link: "About" },
@@ -39,15 +57,15 @@ const Header = () => {
 
   return (
     <>
-    <section id="header"  className={`fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-600 text-black z-50 shadow-lg
-    `}>
-      <div className={`flex items-center justify-between  h-20 px-4 md:px-10 `}>
+    <section id="header"  className={`fixed top-0 left-0 w-full transition-colors text-black z-50
+    ${isScrolled ? "bg-slate-700 shadow-md" : " bg-gradient-to-r from-gray-200 to-gray-700"}`}>
+      <div className={`flex items-center justify-between h-[70px] sm:h-20 px-4 md:px-10 `}>
 
         <div className="flex items-center gap-4 md:gap-3">
           <img
             src={images}
             alt="logo"
-            className="w-12 h-12 rounded-full shadow-xl object-cover"
+            className="w-12 h-12 rounded-full  object-cover"
           />
           <h1 className="text-lg md:text-lg lg:text-xl font-serif">PORTFOLIO</h1>
         </div>
@@ -71,8 +89,8 @@ const Header = () => {
           ))}
         </div>
 
-        <div className={` md:hidden text-2xl transform transition-transform duration-300 ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <RxCross1/> : <HiOutlineBars2 className="text-3xl"/>}
+        <div className={` md:hidden text-2xl transform transition-transform duration-300 ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={() => setMenuOpen(true)}>
+         <HiOutlineBars2 className="text-3xl"/>
         </div>
       </div>
 
@@ -81,17 +99,19 @@ const Header = () => {
 
    <AnimatePresence>
           {menuOpen &&(
-            <div className='fixed inset-0 bg-black/40 z-40 md:hidden '>
+            <div className='fixed inset-0 bg-black/40 z-50 md:hidden '>
+              
               <motion.div
                initial ={{x: 250}}
               animate ={{x:10}}
               exit={{x:250}}
               transition={{duration: 0.4}}
               ref={sidebarRef}
-              className="bg-gradient-to-br from-gray-200 to-gray-600 w-60 p-7 inset-0  fixed top-0 h-full justify-self-end pt-24"
-              >
+              className="bg-gradient-to-br from-gray-200 to-gray-600 w-60 p-7 inset-0  fixed top-0 h-full justify-self-end pt-24">  
 
-              <div className="flex flex-col gap-1.5 px-4 py-2">
+               <div className="flex items-start justify-end relative bottom-20 text-xl font-semibold"onClick={() => setMenuOpen(false)}><RxCross1/> </div>
+
+            <div className="flex flex-col gap-1.5 px-4 py-2">
            {navItems.map((item, i) => (
           <Link  
             key={i}
