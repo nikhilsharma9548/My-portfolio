@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <>
-    <section id="header"  className={`fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-600 text-black z-50 
+    <section id="header"  className={`fixed top-0 left-0 w-full bg-gradient-to-r from-gray-200 to-gray-600 text-black z-50 shadow-lg
     `}>
       <div className={`flex items-center justify-between  h-20 px-4 md:px-10 `}>
 
@@ -71,7 +71,7 @@ const Header = () => {
           ))}
         </div>
 
-        <div className={` md:hidden text-2xl transform transition-transform duration-150 ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={() => setMenuOpen(!menuOpen)}>
+        <div className={` md:hidden text-2xl transform transition-transform duration-300 ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <RxCross1/> : <HiOutlineBars2 className="text-3xl"/>}
         </div>
       </div>
@@ -83,10 +83,10 @@ const Header = () => {
           {menuOpen &&(
             <div className='fixed inset-0 bg-black/40 z-40 md:hidden '>
               <motion.div
-               initial ={{x: 1500}}
+               initial ={{x: 250}}
               animate ={{x:10}}
-              exit={{x:400}}
-              transition={{duration:0.25}}
+              exit={{x:250}}
+              transition={{duration: 0.4}}
               ref={sidebarRef}
               className="bg-gradient-to-br from-gray-200 to-gray-600 w-60 p-7 inset-0  fixed top-0 h-full justify-self-end pt-24"
               >

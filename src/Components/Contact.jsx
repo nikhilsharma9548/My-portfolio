@@ -13,6 +13,7 @@ const Contact = () => {
     const [loading, setLoading] = useState(false);
     const onSubmit = async(data) => {
         const userInfo = {  
+          
             name: data.name,
             email: data.email,
             message: data.message
