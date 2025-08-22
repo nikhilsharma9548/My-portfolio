@@ -10,7 +10,7 @@ import toast from 'react-hot-toast';
 const Contact = () => {
     
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState("Loading");
     const onSubmit = async(data) => {
         const userInfo = {  
           
@@ -86,13 +86,12 @@ const Contact = () => {
                 placeholder='Message' className='w-[80%] md:w-[38%] h-48 rounded-md border-2 border-gray-400 px-4'/>
                 {errors.message && <span className='text-sm flex'>This field is required</span>}
 
-               {!loading ? <motion.button 
+               <motion.button 
                  initial={{opacity:0,translateY: 80}}
                   whileInView={{opacity:1,translateY:0}}
                   transition={{duration:0.7}}
                   whileTap={{scale:0.8}}
-                type="submit" className='bg-black text-white w-36 h-12  rounded-md'>Send</motion.button>:
-                 <p className='p-4 rounded-lg bg-black text-white'>Loading...</p>}
+                type="submit" className='bg-black text-white px-5 py-3 text-base  rounded-md'>{!loading ? "loading..." : "Send"}</motion.button>
             </form>
         </div >
 

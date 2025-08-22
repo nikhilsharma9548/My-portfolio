@@ -58,7 +58,7 @@ const Header = () => {
   return (
     <>
     <section id="header"  className={`fixed top-0 left-0 w-full transition-colors text-black z-50
-    ${isScrolled ? "bg-slate-700 shadow-md" : " bg-gradient-to-r from-gray-200 to-gray-700"}`}>
+    ${isScrolled ? "bg-slate-700 shadow-md text-white" : " bg-gradient-to-r from-gray-200 to-gray-700"}`}>
       <div className={`flex items-center justify-between h-[70px] sm:h-20 px-4 md:px-10 `}>
 
         <div className="flex items-center gap-4 md:gap-3">
@@ -97,6 +97,8 @@ const Header = () => {
 
     </section>
 
+          {/* menu bar for mobile view */}
+
    <AnimatePresence>
           {menuOpen &&(
             <div className='fixed inset-0 bg-black/40 z-50 md:hidden '>
@@ -105,11 +107,11 @@ const Header = () => {
                initial ={{x: 250}}
               animate ={{x:10}}
               exit={{x:250}}
-              transition={{duration: 0.4}}
+              transition={{duration: 0.3}}
               ref={sidebarRef}
               className="bg-gradient-to-br from-gray-200 to-gray-600 w-60 p-7 inset-0  fixed top-0 h-full justify-self-end pt-24">  
 
-               <div className="flex items-start justify-end relative bottom-20 text-xl font-semibold"onClick={() => setMenuOpen(false)}><RxCross1/> </div>
+               <div className="flex items-start justify-end relative bottom-20 text-2xl font-bold"onClick={() => setMenuOpen(false)}><RxCross1/> </div>
 
             <div className="flex flex-col gap-1.5 px-4 py-2">
            {navItems.map((item, i) => (
