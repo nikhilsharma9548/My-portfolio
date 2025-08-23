@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import { HiOutlineBars2 } from "react-icons/hi2";
+import { CgMenuLeft } from "react-icons/cg";
 import { RxCross1 } from "react-icons/rx";
 import { Link } from "react-scroll";
 import images from "../images/img3.png";
 import { motion, AnimatePresence } from "framer-motion";
-import { div } from "framer-motion/client";
 
 
 const Header = () => {
@@ -34,7 +33,7 @@ const Header = () => {
   useEffect(() => {
     
     const handleScroll = () => {
-      if (window.scrollY > 20) { // 50px se zyada scroll par color change
+      if (window.scrollY > 30) { // 50px se zyada scroll par color change
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -48,7 +47,7 @@ const Header = () => {
     };
   }, []);
   const navItems = [
-    { name: "Home", link: "Home" },
+    { name: "Home", link: "Home",  },
     { name: "About", link: "About" },
     { name: "Skills", link: "Skills" },
     { name: "Projects", link: "projects" },
@@ -61,14 +60,16 @@ const Header = () => {
     ${isScrolled ? "bg-slate-700 shadow-md text-white" : " bg-gradient-to-r from-gray-200 to-gray-700"}`}>
       <div className={`flex items-center justify-between h-[70px] sm:h-20 px-4 md:px-10 `}>
 
-        <div className="flex items-center gap-4 md:gap-3">
+        <Link className="flex items-center gap-4 md:gap-3"
+        to="Home"
+        smooth={true}>
           <img
             src={images}
             alt="logo"
             className="w-12 h-12 rounded-full  object-cover"
           />
           <h1 className="text-lg md:text-lg lg:text-xl font-serif">PORTFOLIO</h1>
-        </div>
+        </Link>
 
       
         <div className=" px-5 py-3 rounded-full bg-gray-600/40 shadow-md shadow-black  hidden md:flex border  gap-6  text-xl">
@@ -90,7 +91,7 @@ const Header = () => {
         </div>
 
         <div className={` md:hidden text-2xl transform transition-transform duration-300 ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={() => setMenuOpen(true)}>
-         <HiOutlineBars2 className="text-3xl"/>
+         <CgMenuLeft className="text-3xl"/>
         </div>
       </div>
 
@@ -109,9 +110,11 @@ const Header = () => {
               exit={{x:250}}
               transition={{duration: 0.3}}
               ref={sidebarRef}
-              className="bg-gradient-to-br from-gray-200 to-gray-600 w-60 p-7 inset-0  fixed top-0 h-full justify-self-end pt-24">  
+              className="bg-gradient-to-br from-gray-200 to-gray-600 w-60 p-7 inset-0 
+              fixed top-0 h-full justify-self-end pt-24">  
 
-               <div className="flex items-start justify-end relative bottom-20 text-2xl font-bold"onClick={() => setMenuOpen(false)}><RxCross1/> </div>
+               <div className="flex justify-end relative bottom-20 text-2xl font-bold"
+               onClick={() => setMenuOpen(false)}><RxCross1/> </div>
 
             <div className="flex flex-col gap-1.5 px-4 py-2">
            {navItems.map((item, i) => (
@@ -123,7 +126,8 @@ const Header = () => {
             offset={true}
             spy={true}
             activeClass="active-link"
-            className="text-lg cursor-pointer flex flex-col justify-center items-center pb-2 transition-all duration-150 "
+            className="text-lg cursor-pointer flex flex-col
+            pb-2 transition-all duration-150 "
             onClick={() => setMenuOpen(false) }>{item.name}
           </Link>
           ))}
