@@ -6,6 +6,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { LuLink } from "react-icons/lu";
 import chatApp from "../images/chatApp.jpg"
 import Auth from "../images/DoremonAuth.png";
+import TimeAura from "../images/TimeAura.png";
 const Projects = () => {
     const projectList = [
       {
@@ -34,8 +35,16 @@ const Projects = () => {
         title: "User Authentication App",
         description: "A simple user authentication app built with React, Node.js, and MongoDB.It allows users to register, login, verify Email, reset thier password also in their profiles.",
         github: "https://github.com/nikhilsharma9548/DoremonAuth",
-        demo: "https://doremon-auth-frontend.vercel.app",
+        demo: "https://watch-store-frontend-three.vercel.app",
         image:Auth,
+      
+      },
+       {
+        title: "TimeAura",
+        description: "A simple E-commerce watch selling platform  built with React, Node.js, and MongoDB.It allows users to login, Purchase Watches, view their profiles and order history.",
+        github: "https://github.com/nikhilsharma9548/WatchStore-Frontend",
+        demo: "https://doremon-auth-frontend.vercel.app",
+        image:TimeAura,
       
       },
     ];
