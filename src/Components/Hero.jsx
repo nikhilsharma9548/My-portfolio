@@ -3,7 +3,7 @@ import { FaBagShopping } from "react-icons/fa6";
 import Resume from "../images/Resume.pdf";
 import img1 from "../images/img1.jpg";
 const Hero = () => {  
-  
+  const {scrollY} = useScroll();
   // Hero image shrink and move up
   const scale = useTransform(scrollY, [0, 300], [1, 0.2]);
   const y = useTransform(scrollY, [0, 300], [0, -200]);
