@@ -26,7 +26,7 @@ const Hero = () => {
           y,
           x,
         }}
-            className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-sm border-2 shadow-white object-cover hover:scale-105 transition duration-300"
+            className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-sm border-2 shadow-white object-cover hover:scale-105 transition duration-300 z-[999]"
           />
         </motion.div>
 
