@@ -1,8 +1,13 @@
-import {motion} from "motion/react";
+import {motion, useScroll, useTransform } from "motion/react";
 import { FaBagShopping } from "react-icons/fa6";
 import Resume from "../images/Resume.pdf";
 import img1 from "../images/img1.jpg";
 const Hero = () => {  
+  const {scrollY} = useScroll();
+  // Hero image shrink and move up
+  const scale = useTransform(scrollY, [0, 500], [1, 0.2]);
+  const y = useTransform(scrollY, [0, 500], [0, -300]);
+  const x = useTransform(scrollY, [0, 500], [0, -200]); // move toward logo side
   
     return (
       
@@ -13,10 +18,15 @@ const Hero = () => {
          animate={{opacity: 1, scale: 1}}
          transition={{duration:0.5}}
         >
-          <img
+          <motion.img
             src={img1}
             alt="Nikhil"
-            className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-sm border-2 shadow-white object-cover hover:scale-105 transition duration-300"
+            style={{
+          scale,
+          y,
+          x,
+        }}
+            className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-sm border-2 shadow-white object-cover hover:scale-105 transition duration-300 z-[999]"
           />
         </motion.div>
 

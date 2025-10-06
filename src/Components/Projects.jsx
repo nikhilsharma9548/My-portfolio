@@ -43,7 +43,7 @@ const Projects = () => {
         title: "TimeAura",
         description: "A simple E-commerce watch selling platform  built with React, Node.js, and MongoDB.It allows users to login, Purchase Watches, view their profiles and order history.",
         github: "https://github.com/nikhilsharma9548/WatchStore-Frontend",
-        demo: "https://doremon-auth-frontend.vercel.app",
+        demo: "https://watch-store-frontend-three.vercel.app",
         image:TimeAura,
       
       },
