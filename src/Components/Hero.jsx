@@ -18,7 +18,7 @@ const Hero = () => {
          animate={{opacity: 1, scale: 1}}
          transition={{duration:0.5}}
         >
-          <img
+          <motion.img
             src={img1}
             alt="Nikhil"
             style={{
