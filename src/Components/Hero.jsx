@@ -1,4 +1,4 @@
-import {motion} from "motion/react";
+import {motion, useScroll, useTransform } from "motion/react";
 import { FaBagShopping } from "react-icons/fa6";
 import Resume from "../images/Resume.pdf";
 import img1 from "../images/img1.jpg";
