@@ -5,9 +5,9 @@ import img1 from "../images/img1.jpg";
 const Hero = () => {  
   const {scrollY} = useScroll();
   // Hero image shrink and move up
-  const scale = useTransform(scrollY, [0, 300], [1, 0.2]);
-  const y = useTransform(scrollY, [0, 300], [0, -200]);
-  const x = useTransform(scrollY, [0, 300], [0, -120]); // move toward logo side
+  const scale = useTransform(scrollY, [0, 500], [1, 0.2]);
+  const y = useTransform(scrollY, [0, 500], [0, -300]);
+  const x = useTransform(scrollY, [0, 500], [0, -200]); // move toward logo side
   
     return (
       
