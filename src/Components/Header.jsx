@@ -90,7 +90,8 @@ const Header = () => {
           ))}
         </div>
 
-        <div className={` md:hidden text-2xl transform transition-transform duration-300 ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={() => setMenuOpen(true)}>
+        <div className={` md:hidden text-2xl transform transition-transform duration-300
+           ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={() => setMenuOpen(true)}>
          <CgMenuLeft className="text-3xl"/>
         </div>
       </div>
