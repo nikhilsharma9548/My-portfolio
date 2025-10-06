@@ -4,6 +4,11 @@ import Resume from "../images/Resume.pdf";
 import img1 from "../images/img1.jpg";
 const Hero = () => {  
   
+  // Hero image shrink and move up
+  const scale = useTransform(scrollY, [0, 300], [1, 0.2]);
+  const y = useTransform(scrollY, [0, 300], [0, -200]);
+  const x = useTransform(scrollY, [0, 300], [0, -120]); // move toward logo side
+  
     return (
       
     <section id='Home' className="max-md:h-screen flex md:pt-40 md:pb-28  flex-col justify-center items-center bg-gradient-to-r from-gray-200 to-gray-700 text-black text-center ">
@@ -16,6 +21,11 @@ const Hero = () => {
           <img
             src={img1}
             alt="Nikhil"
+            style={{
+          scale,
+          y,
+          x,
+        }}
             className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-sm border-2 shadow-white object-cover hover:scale-105 transition duration-300"
           />
         </motion.div>
