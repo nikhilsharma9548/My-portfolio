@@ -9,14 +9,14 @@ import Auth from "../images/DoremonAuth.png";
 import TimeAura from "../images/TimeAura.png";
 const Projects = () => {
     const projectList = [
-      {
-        title: "Learn Management System",
-        description:" An efficient platform for managing and tracking online learning.",
-        github: "https://github.com/nikhilsharma9548/Learn-management-system",
-        demo: "https://learn-management-system-frontend.vercel.app",
-        image:LMS,
+      // {
+      //   title: "Learn Management System",
+      //   description:" An efficient platform for managing and tracking online learning.",
+      //   github: "https://github.com/nikhilsharma9548/Learn-management-system",
+      //   demo: "https://learn-management-system-frontend.vercel.app",
+      //   image:LMS,
         
-      },
+      // },
       {
         title:"Chat App",
         description:"A Chat App bulid to using react js ,tailwind CSS, gemini API ",
@@ -35,7 +35,7 @@ const Projects = () => {
         title: "User Authentication App",
         description: "A simple user authentication app built with React, Node.js, and MongoDB.It allows users to register, login, verify Email, reset thier password also in their profiles.",
         github: "https://github.com/nikhilsharma9548/DoremonAuth",
-        demo: "https://watch-store-frontend-three.vercel.app",
+        demo: "https://doremon-auth-frontend.vercel.app",
         image:Auth,
       
       },
