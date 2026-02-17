@@ -31,14 +31,14 @@ const Projects = () => {
         demo: "https://weather-app-kohl-five-70.vercel.app",
         image:WeatherApp,
       },
-      {
-        title: "User Authentication App",
-        description: "A simple user authentication app built with React, Node.js, and MongoDB.It allows users to register, login, verify Email, reset thier password also in their profiles.",
-        github: "https://github.com/nikhilsharma9548/DoremonAuth",
-        demo: "https://doremon-auth-frontend.vercel.app",
-        image:Auth,
+      // {
+      //   title: "User Authentication App",
+      //   description: "A simple user authentication app built with React, Node.js, and MongoDB.It allows users to register, login, verify Email, reset thier password also in their profiles.",
+      //   github: "https://github.com/nikhilsharma9548/DoremonAuth",
+      //   demo: "https://doremon-auth-frontend.vercel.app",
+      //   image:Auth,
       
-      },
+      // },
        {
         title: "TimeAura",
         description: "A simple E-commerce watch selling platform  built with React, Node.js, and MongoDB.It allows users to login, Purchase Watches, view their profiles and order history.",

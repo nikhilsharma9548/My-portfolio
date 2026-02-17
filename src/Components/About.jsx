@@ -60,7 +60,7 @@ const About = () => {
         transition={{duration:0.3}}
         
         >
-          <p className='text-4xl px-5 pt-5'><PiGraduationCapFill /></p>
+          <p className='text-4xl px-5 pt-3'><PiGraduationCapFill /></p>
           <h1 className='px-4 pt-2 text-xl'>Education</h1>
           <h1 className='p-1 mx-2'>Bachelor of Computer Applications(BCA)</h1>
         </motion.div>
@@ -71,7 +71,7 @@ const About = () => {
         whileInView={{opacity:1,translateX:0}}
         transition={{duration:0.3}}
         >
-          <p className='text-4xl px-5 pt-5'><VscFileSubmodule /></p>
+          <p className='text-4xl px-5 pt-3'><VscFileSubmodule /></p>
           <h1 className='px-4 pt-2 text-xl'>Projects</h1>
           <h1 className=' p-3 '>Built more than 5 projects</h1>
         </motion.div>
