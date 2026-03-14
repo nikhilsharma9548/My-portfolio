@@ -61,7 +61,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="pt-24 pb-10 md:pt-10 bg-gradient-to-r from-gray-200 to-gray-700 text-gray-800"
+      className="pt-24 pb-10 md:pt-10 text-gray-800"
     >
       {/* Heading */}
       <div className="text-center mb-10">
@@ -137,7 +137,7 @@ const Projects = () => {
       <div className="flex justify-center mt-10">
         <button
           onClick={() => setShowAll(!showAll)}
-          className="px-4 py-3 flex bg-black text-white rounded hover:bg-gray-800 transition gap-2 justify-center items-center"
+          className="px-3 py-2.5 flex bg-[#6082B6] hover:bg-[#191970]/90 border-gray-300 border duration-300 text-white rounded hover:bg-gray-800 transition gap-2 justify-center items-center"
         >
           {showAll ? "See Less " : "See More"} <FaArrowLeft className={!showAll ? "-rotate-180" : "-rotate-0"}/>
         </button>

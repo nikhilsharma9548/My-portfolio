@@ -54,7 +54,7 @@ const Skills = () => {
   return (
     <section
   id="Skills"
-  className="w-full px-4 pt-24 md:pt-10 pb-10 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700 flex flex-col justify-center items-center text-center">
+  className="w-full px-4 pt-24 md:pt-10 pb-10 overflow-hidden  flex flex-col justify-center items-center text-center">
 
   <motion.h1 
       initial={{opacity:0,translateY:"-100%"}}
@@ -79,8 +79,7 @@ const Skills = () => {
       transition={{duration:0.5}}
       
         key={index}
-        className="bg-white w-72 h-14 border border-black p-2 rounded-xl shadow-lg hover:shadow-2xl
-                   transition-all hover:scale-105 duration-700 flex items-center gap-4 cursor-pointer">
+        className="bg-white w-72 h-14 border-2 border-gray-400 p-2 rounded-tr-full shadow-black rounded-bl-full shadow-md hover:shadow-2xl transition-all hover:scale-105 pl-7 duration-700 flex items-center gap-4 cursor-pointer">
         <img
           src={skill.image}
           alt={skill.name}

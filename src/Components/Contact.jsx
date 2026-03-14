@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import{motion} from 'motion/react'
+import { BiSolidSend } from "react-icons/bi";
 import img1 from '../images/github.webp';
 import img2 from '../images/linkdin.webp';
 import img3 from '../images/insta.webp';  
@@ -44,7 +45,7 @@ const Contact = () => {
       
 
     return(
-       <section  id="Contact" className=" md:pt-10 pt-24  bg-gradient-to-r from-gray-200 to-gray-700 h-full overflow-hidden  flex-col justify-center sm:pt-0">
+       <section  id="Contact" className=" md:pt-10 pt-24  h-full overflow-hidden  flex-col justify-center sm:pt-0">
         <motion.h1 
         initial={{opacity:0,translateY:'-100%'}}
         whileInView={{opacity:1,translateY:0}}
@@ -91,7 +92,7 @@ const Contact = () => {
                   whileInView={{opacity:1,translateY:0}}
                   transition={{duration:0.7}}
                   whileTap={{scale:0.8}}
-                type="submit" className='bg-black text-white px-5 py-3 text-base  rounded-md'>{!loading ? "loading..." : "Send"}</motion.button>
+                type="submit" className=' flex bg-[#6082B6] hover:bg-[#191970]/90 border-gray-300 border transition duration-300 text-white px-3 justify-center items-center gap-2 py-2 text-base  rounded-md'>{!loading ? "loading..." : "Send"} <BiSolidSend/></motion.button>
             </form>
         </div >
 

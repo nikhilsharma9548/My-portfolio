@@ -7,7 +7,7 @@ import image4 from "../images/img2.jpg";
 
 const About = () => {
   return ( 
-    <section id='About' className=" w-full   flex-col md:flex-row  pt-24 md:pt-10 pb-10 overflow-hidden bg-gradient-to-r from-gray-200 to-gray-700">
+    <section id='About' className=" w-full   flex-col md:flex-row  pt-24 md:pt-10 pb-10 overflow-hidden ">
   <motion.h1 
    initial={{opacity:0,translateY:'-100%'}}
     whileInView={{opacity:1,translateY:0}}

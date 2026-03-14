@@ -57,7 +57,7 @@ const Header = () => {
   return (
     <>
     <section id="header"  className={`fixed top-0 left-0 w-full transition-colors text-black z-50
-    ${isScrolled ? "bg-slate-700 shadow-md text-white" : " bg-gradient-to-r from-gray-200 to-gray-700"}`}>
+    ${isScrolled ? "bg-[#6082B6] shadow-md text-white" : "bg-[#7393B3]"}`}>
       <div className={`flex items-center justify-between h-[70px] sm:h-20 px-4 md:px-10 `}>
 
         <Link className="flex items-center gap-4 md:gap-3"
@@ -72,7 +72,7 @@ const Header = () => {
         </Link>
 
       
-        <div className=" px-5 py-3 rounded-full bg-gray-600/40 shadow-md shadow-black  hidden md:flex border  gap-6  text-xl">
+        <div className=" px-5 py-3 rounded-full bg-[#7393B3]/40 shadow-md shadow-black  hidden md:flex border  gap-6  text-xl">
           {navItems.map((item, i) => (  
              <Link
                 key={i}
