@@ -111,13 +111,13 @@ const Header = () => {
               exit={{x:250}}
               transition={{duration: 0.3}}
               ref={sidebarRef}
-              className="bg-gradient-to-br from-gray-200 to-gray-600 w-60 p-7 inset-0 
+              className="bg-[#7393B3] w-60 p-7 inset-0 
               fixed top-0 h-full justify-self-end pt-24">  
 
-               <div className="flex justify-end relative bottom-20 text-2xl font-bold"
+               <div className="flex justify-end text-white relative bottom-20 text-2xl font-bold"
                onClick={() => setMenuOpen(false)}><RxCross1/> </div>
 
-            <div className="flex flex-col gap-1.5 px-4 py-2">
+            <div className="flex flex-col gap-1.5 px-4 py-2 text-white">
            {navItems.map((item, i) => (
           <Link  
             key={i}

@@ -102,7 +102,7 @@ const Contact = () => {
               initial={{opacity:0,scale:0.5}}
               whileInView={{opacity:1,scale: 1}}
               transition={{duration:0.1}}
-            key={index} className='w-12 h-12 rounded-full relative bottom-5 md:bottom-0 bg-white flex items-center justify-center shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-500 cursor-pointer'>
+            key={index} className='w-12 h-12 rounded-tl-xl rounded-br-xl relative bottom-5 md:bottom-0 bg-white flex items-center justify-center shadow-lg hover:shadow-2xl transition-all hover:scale-105 duration-500 cursor-pointer'>
                 <a href={icon.link} target="_blank" rel="noopener noreferrer">
                 <img src={icon.Image} alt="icon" className='w-8 h-8 object-cover' />
                 </a>
