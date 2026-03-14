@@ -6,7 +6,7 @@ import Main from "./Components/Main";
 function App() {
   return (
    <>
-    <div className="App flex overflow-hidden">
+    <div className="App flex overflow-hidden ">
       <Main />
     </div>
     <Toaster

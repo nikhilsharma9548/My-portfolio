@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import WeatherApp from "../images/WeatherApp.png";
+import { FaArrowLeft } from "react-icons/fa";
 import LMS from "../images/Padho-Likho.png";
 import { IoLogoGithub } from "react-icons/io";
 import { LuLink } from "react-icons/lu";
@@ -136,9 +137,9 @@ const Projects = () => {
       <div className="flex justify-center mt-10">
         <button
           onClick={() => setShowAll(!showAll)}
-          className="px-8 py-3 bg-black text-white rounded hover:bg-gray-800 transition"
+          className="px-4 py-3 flex bg-black text-white rounded hover:bg-gray-800 transition gap-2 justify-center items-center"
         >
-          {showAll ? "See Less" : "See More"}
+          {showAll ? "See Less " : "See More"} <FaArrowLeft className={!showAll ? "-rotate-180" : "-rotate-0"}/>
         </button>
       </div>
     </section>
