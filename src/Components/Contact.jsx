@@ -92,7 +92,7 @@ const Contact = () => {
                   whileInView={{opacity:1,translateY:0}}
                   transition={{duration:0.7}}
                   whileTap={{scale:0.8}}
-                type="submit" className=' flex bg-[#6082B6] hover:bg-[#191970]/90 border-gray-300 border transition duration-300 text-white px-3 justify-center items-center gap-2 py-2 text-base  rounded-md'>{!loading ? "loading..." : "Send"} <BiSolidSend/></motion.button>
+                type="submit" className=' flex bg-[#6082B6] hover:bg-[#191970]/80 border-gray-300 border transition duration-300 text-white px-3 justify-center items-center gap-2 py-2 text-base  rounded-md'>{!loading ? "loading..." : "Send"} <BiSolidSend/></motion.button>
             </form>
         </div >
 
