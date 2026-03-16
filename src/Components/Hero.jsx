@@ -17,7 +17,7 @@ const Hero = () => {
           <motion.img
             src={img1}
             alt="Nikhil"
-            className="w-40 h-40 md:w-60 md:h-60 rounded-full shadow-sm border-2 profile-img shadow-white object-cover transition duration-300"
+            className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-sm border-2 profile-img shadow-white object-cover transition duration-300"
           />
         </motion.div>
 
@@ -38,16 +38,16 @@ const Hero = () => {
             initial={{opacity: 0, y:-50 }}
             animate={{opacity: 1, y:0  }}
             transition={{duration:0.5}}
-        className="w-72 md:w-[300px] flex items-center justify-center text-center md:gap-16 text-white  gap-10 md:mt-10 ">
+        className=" flex items-center justify-center text-center md:gap-16 text-white  gap-10 md:mt-10 ">
             <a href="https://www.linkedin.com/in/nikhil-sharma-43a013341" 
               target="_blank"
-              className="px-3 py-1.5 flex gap-2 border-gray-300 border bg-[#6082B6] hover:bg-[#191970]/90 rounded-lg text-lg md:font-semibold transition duration-300 ">
+              className="sm:px-6 sm:py-3 py-2 px-2.5 flex gap-2 border-gray-300 border bg-[#6082B6] hover:bg-[#191970]/80 rounded-full text-lg transition duration-300 ">
             <FaBagShopping  className="text-[18px] mt-1"/>Hire me</a>
           <a 
             href={Resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-center items-center px-2 gap-2 py-1.5 text-lg md:font-semibold border-gray-300 border bg-[#6082B6] hover:bg-[#191970]/90 rounded-lg transition duration-300"
+            className="flex justify-center items-center sm:px-6 sm:py-3 py-2 px-2.5 gap-2 text-lg  border-gray-300 border bg-[#6082B6] hover:bg-[#191970]/80 rounded-full transition duration-300"
           >
             Resume <MdDownload/>
           </a>

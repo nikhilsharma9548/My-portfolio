@@ -61,7 +61,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="pt-24 pb-10 md:pt-10 text-gray-800"
+      className="pt-24 pb-12 md:pt-10 text-gray-800"
     >
       {/* Heading */}
       <div className="text-center mb-10">

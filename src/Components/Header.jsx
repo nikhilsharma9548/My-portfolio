@@ -82,7 +82,7 @@ const Header = () => {
                 offset={-70}
                 spy={true}
                 activeClass="active-link-1"
-                className="text-lg cursor-pointer px-1.5  transition-all duration-300 hover:text-white"
+                className="text-lg cursor-pointer px-1.5  transition-all duration-150   hover:text-white"
                  >
                 {item.name}
               </Link>
