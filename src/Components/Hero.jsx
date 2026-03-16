@@ -1,6 +1,6 @@
 import {motion, useScroll, useTransform } from "motion/react";
 import { FaBagShopping } from "react-icons/fa6";
-import Resume from "../images/Resume.pdf";
+import Resume from "../images/Nikhil.pdf";
 import img1 from "../images/img1.jpg";
 import { MdDownload } from "react-icons/md";
 const Hero = () => {  
@@ -43,9 +43,14 @@ const Hero = () => {
               target="_blank"
               className="px-3 py-1.5 flex gap-2 border-gray-300 border bg-[#6082B6] hover:bg-[#191970]/90 rounded-lg text-lg md:font-semibold transition duration-300 ">
             <FaBagShopping  className="text-[18px] mt-1"/>Hire me</a>
-
-            <a href={Resume} download='Resume.pdf'
-              className="flex justify-center items-center px-2 gap-2  py-1.5 text-lg md:font-semibold border-gray-300 border bg-[#6082B6] hover:bg-[#191970]/90 rounded-lg transition duration-300">Resume <MdDownload/></a>
+          <a 
+            href={Resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex justify-center items-center px-2 gap-2 py-1.5 text-lg md:font-semibold border-gray-300 border bg-[#6082B6] hover:bg-[#191970]/90 rounded-lg transition duration-300"
+          >
+            Resume <MdDownload/>
+          </a>
         </motion.div>
         
     </section>
