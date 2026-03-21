@@ -5,7 +5,6 @@ import { Link } from "react-scroll";
 import images from "../images/img3.png";
 import { motion, AnimatePresence } from "framer-motion";
 
-
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const sidebarRef = useRef(null);
@@ -90,10 +89,12 @@ const Header = () => {
           ))}
         </div>
 
-        <div className={` md:hidden text-2xl transform transition-transform duration-300
-           ${menuOpen ? "-rotate-90" : "rotate-0"}`}  onClick={() => setMenuOpen(true)}>
-         <CgMenuLeft className="text-3xl"/>
+          <div className={` md:hidden text-2xl transform transition-transform duration-300
+           ${menuOpen ? "-rotate-180" : "rotate-0"}`} >
+         {!menuOpen ? (<CgMenuLeft className="text-3xl" onClick={() => setMenuOpen(true)}/>) 
+         :(<RxCross1 className="text-3xl" onClick={() => setMenuOpen(false)}/>) }
         </div>
+
       </div>
 
 
@@ -103,21 +104,16 @@ const Header = () => {
 
    <AnimatePresence>
           {menuOpen &&(
-            <div className='fixed inset-0 bg-black/40 z-50 md:hidden '>
-              
-              <motion.div
-               initial ={{x: 250}}
-              animate ={{x:10}}
-              exit={{x:250}}
-              transition={{duration: 0.3}}
-              ref={sidebarRef}
-              className="bg-[#7393B3] w-60 p-7 inset-0 
-              fixed top-0 h-full justify-self-end pt-24">  
-
-               <div className="flex justify-end text-white relative bottom-20 text-2xl font-bold"
-               onClick={() => setMenuOpen(false)}><RxCross1/> </div>
-
-            <div className="flex flex-col gap-1.5 px-4 py-2 text-white">
+      <div>
+        <motion.div
+          initial ={{y: -250}}
+          animate ={{y:20}}
+          exit={{y:-250}}
+          transition={{duration: 0.3}}
+          ref={sidebarRef}
+          className="bg-[#6082B6]/70 w-full fixed"
+        >
+          <div className="flex flex-col gap-1.5 px-4 py-2 pt-14 text-white">
            {navItems.map((item, i) => (
           <Link  
             key={i}
@@ -128,14 +124,13 @@ const Header = () => {
             spy={true}
             activeClass="active-link"
             className="text-lg cursor-pointer flex flex-col
-            pb-2 transition-all duration-150 "
+            pb-2 transition-all duration-150"
             onClick={() => setMenuOpen(false) }>{item.name}
           </Link>
           ))}
          </div>
-
-              </motion.div>
-            </div>
+        </motion.div>
+      </div>
           )}
    </AnimatePresence> 
       
@@ -144,32 +139,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-{/* <AnimatePresence>
-          {menuOpen && (
-        <motion.div id="menu" 
-         initial={{x: 50 }}
-            animate={{x: 0 }}
-            exit={{ x: 500 }}
-            transition={{ duration: 0.3 }}
-        className={`md:hidden bg-inherit flex flex-col justify-center items-end p-3 `}>
-         
-         <div className=" border-2 flex flex-col gap-1.5  border-gray-700/80 bg-gray-600 px-4 py-2  rounded-lg">
-           {navItems.map((item, i) => (
-          <Link  
-            key={i}
-            to={item.link}
-            smooth={true} 
-            duration={500}
-            offset={true}
-            spy={true}
-            activeClass="active-link"
-            className="text-lg cursor-pointer  p-0.7 flex flex-col bg-gray-700/90 justify-center items-center pb-2 px-20 transition-all duration-150 "
-            onClick={() => setMenuOpen(false) }>{item.name}
-          </Link>
-          ))}
-         </div>
-        </motion.div>
-      )}
-      </AnimatePresence> */}
