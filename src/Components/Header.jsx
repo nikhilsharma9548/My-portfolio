@@ -52,6 +52,28 @@ const Header = () => {
     { name: "Projects", link: "projects" },
     { name: "Contact", link: "Contact" },
   ];
+   const container = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.25,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const itemAnimation = {
+  hidden: { opacity: 0, y: -30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: "easeOut",
+    },
+  },
+};
+
 
   return (
     <>
@@ -104,33 +126,41 @@ const Header = () => {
 
    <AnimatePresence>
           {menuOpen &&(
-      <div>
-        <motion.div
-          initial ={{y: -250}}
-          animate ={{y:20}}
-          exit={{y:-250}}
-          transition={{duration: 0.3}}
-          ref={sidebarRef}
-          className="bg-[#6082B6]/70 w-full fixed"
-        >
-          <div className="flex flex-col gap-1.5 px-4 py-2 pt-14 text-white">
-           {navItems.map((item, i) => (
+     
+<div>
+  <motion.div
+    initial={{ y: -250 }}
+    animate={{ y: 20 }}
+    exit={{ y: -250 }}
+    transition={{ duration: 0.3 }}
+    ref={sidebarRef}
+    className="w-full fixed"
+  >
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      className="flex flex-col gap-1.5 px-4 py-2 pt-14 text-white"
+    >
+      {navItems.map((item, i) => (
+        <motion.div key={i} variants={itemAnimation}>
           <Link  
-            key={i}
             to={item.link}
             smooth={true} 
             duration={500}
             offset={true}
             spy={true}
             activeClass="active-link"
-            className="text-lg cursor-pointer flex flex-col
-            pb-2 transition-all duration-150"
-            onClick={() => setMenuOpen(false) }>{item.name}
+            className="text-lg cursor-pointer  px-2 py-2 rounded-md justify-center bg-slate-600/90 flex flex-col pb-2 transition-all duration-150"
+            onClick={() => setMenuOpen(false)}
+          >
+            {item.name}
           </Link>
-          ))}
-         </div>
         </motion.div>
-      </div>
+      ))}
+    </motion.div>
+  </motion.div>
+</div>
           )}
    </AnimatePresence> 
       
